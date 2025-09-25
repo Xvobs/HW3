@@ -1,0 +1,48 @@
+# MOTIF Malware Image Generation Requirements
+# ===========================================
+#
+# Core dependencies for malware binary to image conversion
+# Install with: pip install -r requirements.txt
+
+# Core image processing and numerical computing
+numpy>=1.21.0
+Pillow>=8.3.0
+
+# Machine learning and data processing
+scikit-learn>=1.0.0
+pandas>=1.3.0
+
+# Deep learning (PyTorch)
+torch>=1.12.0
+torchvision>=0.13.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Progress bars and utilities
+tqdm>=4.62.0
+
+# File format handling
+python-magic>=0.4.24
+
+# Windows PE file analysis (optional, for advanced features)
+pefile>=2021.9.3
+
+# Optional: Deep Learning frameworks (uncomment if needed)
+# PyTorch (recommended for malware classification)
+# torch>=1.10.0
+# torchvision>=0.11.0
+
+# TensorFlow (alternative to PyTorch)
+# tensorflow>=2.7.0
+
+# Optional: Jupyter notebook support
+# jupyter>=1.0.0
+# ipywidgets>=7.6.0
+
+# Optional: Advanced visualization
+# plotly>=5.0.0
+
+# Optional: Parallel processing
+# joblib>=1.1.0
