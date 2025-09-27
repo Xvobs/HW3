@@ -69,9 +69,23 @@ class MOTIFDataset:
             with open(info_path, 'r') as f:
                 self.dataset_info = json.load(f)
         
-        # Define class mapping
-        self.class_to_idx = {"benign": 0, "malware": 1}
-        self.idx_to_class = {0: "benign", 1: "malware"}
+        # Determine if this is multi-class or binary classification
+        dataset_type = self.dataset_info.get("dataset_type", "binary_classification")
+        
+        if dataset_type == "multi_class_family_classification":
+            # Multi-class family classification setup
+            self.class_to_idx = self.dataset_info.get("class_to_id", {})
+            self.idx_to_class = self.dataset_info.get("classes", {})
+            # Convert string keys to int for idx_to_class
+            self.idx_to_class = {int(k): v for k, v in self.idx_to_class.items()}
+            self.num_classes = self.dataset_info.get("num_classes", len(self.class_to_idx))
+            logger.info(f"Multi-class dataset with {self.num_classes} malware families")
+        else:
+            # Binary classification setup (backward compatibility)
+            self.class_to_idx = {"benign": 0, "malware": 1}
+            self.idx_to_class = {0: "benign", 1: "malware"}
+            self.num_classes = 2
+            logger.info("Binary classification dataset")
         
         # Load file paths and labels
         self.samples = self._load_samples()
@@ -83,17 +97,38 @@ class MOTIFDataset:
         samples = []
         split_dir = self.dataset_dir / self.split
         
-        for class_name in ["benign", "malware"]:
-            class_dir = split_dir / class_name
-            if not class_dir.exists():
-                logger.warning(f"Class directory not found: {class_dir}")
-                continue
-            
-            label = self.class_to_idx[class_name]
-            
-            # Get all PNG files in the class directory
-            for img_path in class_dir.glob("*.png"):
-                samples.append((str(img_path), label))
+        dataset_type = self.dataset_info.get("dataset_type", "binary_classification")
+        
+        if dataset_type == "multi_class_family_classification":
+            # Multi-class: iterate through all family directories
+            for class_name, class_idx in self.class_to_idx.items():
+                class_dir = split_dir / class_name
+                if not class_dir.exists():
+                    logger.debug(f"Family directory not found: {class_dir}")
+                    continue
+                
+                label = int(class_idx)
+                
+                # Get all PNG files in the family directory
+                png_files = list(class_dir.glob("*.png"))
+                for img_path in png_files:
+                    samples.append((str(img_path), label))
+                
+                if png_files:
+                    logger.debug(f"Loaded {len(png_files)} samples from family '{class_name}'")
+        else:
+            # Binary classification: look for malware/benign directories
+            for class_name in ["benign", "malware"]:
+                class_dir = split_dir / class_name
+                if not class_dir.exists():
+                    logger.warning(f"Class directory not found: {class_dir}")
+                    continue
+                
+                label = self.class_to_idx[class_name]
+                
+                # Get all PNG files in the class directory
+                for img_path in class_dir.glob("*.png"):
+                    samples.append((str(img_path), label))
         
         return samples
     

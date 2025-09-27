@@ -24,7 +24,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 import logging
 
 # Import custom dataset loader
-from dataset_loader import MalwareDataset
+from dataset_loader import MOTIFDataset
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -121,6 +121,11 @@ def train_epoch(model, dataloader, criterion, optimizer, device):
         outputs = model(data)
         loss = criterion(outputs, targets)
         loss.backward()
+        
+        # Handle potential MPS issues with gradient clipping
+        if device.type == 'mps':
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+        
         optimizer.step()
         
         total_loss += loss.item()
@@ -183,21 +188,29 @@ def main():
         logger.error(f"Dataset directory not found: {args.dataset_dir}")
         sys.exit(1)
     
-    # Device configuration
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    logger.info(f"Using device: {device}")
+    # Device configuration for Apple Silicon (M1/M2/M3/M4) and other platforms
+    if torch.cuda.is_available():
+        device = torch.device('cuda')
+        logger.info(f"Using CUDA GPU: {torch.cuda.get_device_name()}")
+    elif hasattr(torch.backends, 'mps') and torch.backends.mps.is_available():
+        device = torch.device('mps')
+        logger.info("Using Apple Silicon GPU (MPS)")
+    else:
+        device = torch.device('cpu')
+        logger.info("Using CPU (no GPU acceleration available)")
     
     # Data transforms
     train_transform, val_transform = create_data_transforms(args.image_size)
     
     # Datasets and dataloaders
     logger.info("Loading datasets...")
-    train_dataset = MalwareDataset(
-        dataset_path / 'train', 
+    train_dataset = MOTIFDataset(
+        dataset_path, 
         transform=train_transform
     )
-    val_dataset = MalwareDataset(
-        dataset_path / 'test', 
+    val_dataset = MOTIFDataset(
+        dataset_path, 
+        split='test',
         transform=val_transform
     )
     
@@ -205,13 +218,13 @@ def main():
         train_dataset, 
         batch_size=args.batch_size, 
         shuffle=True, 
-        num_workers=4
+        num_workers=2 if device.type == 'mps' else 4  # Reduce workers for MPS
     )
     val_loader = DataLoader(
         val_dataset, 
         batch_size=args.batch_size, 
         shuffle=False, 
-        num_workers=4
+        num_workers=2 if device.type == 'mps' else 4  # Reduce workers for MPS
     )
     
     logger.info(f"Train samples: {len(train_dataset)}")
@@ -253,7 +266,7 @@ def main():
     
     print("\\nClassification Report:")
     print(classification_report(val_targets, val_preds, 
-                              target_names=['Benign', 'Malware']))
+                              target_names=['Malware']))
     
     print("\\nConfusion Matrix:")
     print(confusion_matrix(val_targets, val_preds))

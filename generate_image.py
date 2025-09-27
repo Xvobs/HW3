@@ -45,7 +45,7 @@ class MalwareImageGenerator:
     "Malware images: visualization and automatic classification"
     """
     
-    def __init__(self, image_size: int = 256, fixed_size: bool = True):
+    def __init__(self, image_size: int = 256, fixed_size: bool = False):
         """
         Initialize the malware image generator.
         
@@ -165,14 +165,13 @@ class MOTIFDatasetProcessor:
         self.image_size = image_size
         self.test_size = test_size
         self.image_generator = MalwareImageGenerator(image_size, fixed_size)
+        self.family_mapping = {}  # Will store label_id -> family_name mapping
         
         # Create output directories
         self.train_dir = self.output_dir / "train"
         self.test_dir = self.output_dir / "test"
         
-        for split_dir in [self.train_dir, self.test_dir]:
-            for class_name in ["malware", "benign"]:
-                (split_dir / class_name).mkdir(parents=True, exist_ok=True)
+        # Will create class directories dynamically based on discovered families
     
     def get_file_hash(self, file_path: str) -> str:
         """Generate MD5 hash for a file."""
@@ -225,9 +224,14 @@ class MOTIFDatasetProcessor:
             logger.info("Processing MOTIF dataset with jsonl labels")
             files = self._process_motif_dataset(motif_jsonl, motif_binaries_dir)
         else:
-            # Fallback to generic processing
-            logger.info("No MOTIF-specific structure found, using generic file discovery")
-            files = self._discover_files_generic()
+            # Check if we have existing family structure (from previous run)
+            if self._has_existing_family_structure():
+                logger.info("Found existing family structure, using for re-generation")
+                files = self._process_existing_family_structure()
+            else:
+                # Fallback to generic processing
+                logger.info("No MOTIF-specific structure found, using generic file discovery")
+                files = self._discover_files_generic()
         
         logger.info(f"Found {len(files['malware'])} malware files")
         logger.info(f"Found {len(files['benign'])} benign files")
@@ -237,43 +241,89 @@ class MOTIFDatasetProcessor:
     def _process_motif_dataset(self, jsonl_path: Path, binaries_dir: Path) -> Dict[str, List[str]]:
         """Process MOTIF dataset using the jsonl file for labels."""
         import json
-        files = {"malware": [], "benign": []}
+        
+        # MOTIF dataset has 454 malware families - use multi-class approach
+        files = {}  # Will contain family_name: [file_paths] mapping
+        family_mapping = {}  # label_id: family_name mapping
         
         with open(jsonl_path, 'r') as f:
             for line in f:
                 try:
                     entry = json.loads(line.strip())
                     md5_hash = entry.get('md5', '')
+                    family_label = entry.get('label', None)  # Numeric family label
+                    reported_family = entry.get('reported_family', f'family_{family_label}')
                     
                     # Look for corresponding binary file
                     binary_file = binaries_dir / f"MOTIF_{md5_hash}"
                     
-                    if binary_file.exists():
-                        # For MOTIF, all files are malware (different families)
-                        # For binary classification, you might want to designate some as benign
-                        # or treat different families differently
-                        files["malware"].append(str(binary_file))
+                    if binary_file.exists() and family_label is not None:
+                        # Clean family name for directory structure
+                        clean_family_name = self._clean_family_name(reported_family)
                         
-                        # Optionally, you could create artificial "benign" class
-                        # by treating some families as benign based on your criteria
+                        # Store family mapping
+                        family_mapping[family_label] = clean_family_name
+                        
+                        # Group files by family
+                        if clean_family_name not in files:
+                            files[clean_family_name] = []
+                        files[clean_family_name].append(str(binary_file))
                         
                 except json.JSONDecodeError as e:
                     logger.warning(f"Error parsing JSON line: {e}")
                 except Exception as e:
                     logger.warning(f"Error processing entry: {e}")
         
-        # If no benign files found, create some artificial ones or use a different approach
-        if not files["benign"] and files["malware"]:
-            logger.warning("No benign files found. For binary classification, consider:")
-            logger.warning("1. Adding legitimate software samples to your dataset")
-            logger.warning("2. Using a different dataset with benign samples")
-            logger.warning("3. Modifying this script for multi-class family classification")
+        # Store family mapping for later use
+        self.family_mapping = family_mapping
+        
+        logger.info(f"Found {len(files)} malware families")
+        for family_name, file_list in files.items():
+            logger.info(f"  {family_name}: {len(file_list)} samples")
         
         return files
     
+    def _clean_family_name(self, family_name: str) -> str:
+        """Clean family name for use as directory name."""
+        import re
+        # Remove special characters and normalize
+        cleaned = re.sub(r'[^\w\-_]', '_', family_name.lower())
+        # Remove multiple underscores
+        cleaned = re.sub(r'_+', '_', cleaned)
+        # Remove leading/trailing underscores
+        cleaned = cleaned.strip('_')
+        return cleaned if cleaned else 'unknown'
+    
     def _discover_files_generic(self) -> Dict[str, List[str]]:
-        """Generic file discovery for non-MOTIF datasets."""
-        files = {"malware": [], "benign": []}
+        """Generic file discovery for non-MOTIF datasets or when JSONL is not available."""
+        files = {}
+        
+        # For MOTIF without JSONL, treat each file as separate family based on naming
+        for root, dirs, filenames in os.walk(self.data_dir):
+            root_path = Path(root)
+            
+            for filename in filenames:
+                file_path = os.path.join(root, filename)
+                
+                # Skip non-executable files and common non-binary files
+                if self._is_valid_binary_file(filename):
+                    # For MOTIF files, extract potential family info from filename or use generic
+                    if filename.startswith("MOTIF_"):
+                        # Use hash as family identifier when no other info available
+                        family_name = f"unknown_family_{filename.split('_')[1][:8]}"
+                    else:
+                        # Generic classification attempt based on path
+                        family_name = self._infer_family_from_path(root_path)
+                    
+                    if family_name not in files:
+                        files[family_name] = []
+                    files[family_name].append(file_path)
+        
+        return files
+    
+    def _infer_family_from_path(self, path: Path) -> str:
+        """Infer family name from directory path."""
+        path_parts = path.parts
         
         # Common patterns for malware dataset organization
         malware_patterns = [
@@ -281,34 +331,46 @@ class MOTIFDatasetProcessor:
             "adware", "spyware", "ransomware", "rootkit"
         ]
         
-        benign_patterns = [
-            "benign", "clean", "goodware", "legitimate"
-        ]
+        # Look for family indicators in path
+        for part in reversed(path_parts):
+            part_lower = part.lower()
+            if any(pattern in part_lower for pattern in malware_patterns):
+                return self._clean_family_name(part)
         
-        for root, dirs, filenames in os.walk(self.data_dir):
-            root_path = Path(root)
-            root_name = root_path.name.lower()
-            
-            # Determine class based on directory name
-            class_label = None
-            
-            if any(pattern in root_name for pattern in malware_patterns):
-                class_label = "malware"
-            elif any(pattern in root_name for pattern in benign_patterns):
-                class_label = "benign"
-            elif "motif" in root_name.lower():
-                # MOTIF files are malware by default
-                class_label = "malware"
-            
-            if class_label:
-                for filename in filenames:
-                    file_path = os.path.join(root, filename)
-                    
-                    # Skip non-executable files and common non-binary files
-                    if self._is_valid_binary_file(filename):
-                        files[class_label].append(file_path)
+        return "unknown_family"
+    
+    def _has_existing_family_structure(self) -> bool:
+        """Check if we have an existing family-based directory structure."""
+        import json
         
-        return files
+        # Look for the current dataset structure
+        existing_dataset_info = self.output_dir / "dataset_info.json"
+        if existing_dataset_info.exists():
+            try:
+                with open(existing_dataset_info, 'r') as f:
+                    info = json.load(f)
+                    return info.get("dataset_type") == "multi_class_family_classification"
+            except:
+                pass
+        
+        # Also check if train/test directories have family subdirectories
+        if self.train_dir.exists():
+            subdirs = [d for d in self.train_dir.iterdir() if d.is_dir()]
+            if len(subdirs) > 2:  # More than just malware/benign
+                return True
+        
+        return False
+    
+    def _process_existing_family_structure(self) -> Dict[str, List[str]]:
+        """Process existing family structure from previous generation."""
+        files = {}
+        
+        # This is a placeholder - in practice, you'd need the original binary files
+        # For now, we'll create a warning that re-generation needs original data
+        logger.warning("Found existing family structure but no original binary files")
+        logger.warning("To regenerate with family classification, you need:")
+        logger.warning("1. The original MOTIF binary files (MOTIF_defanged directory)")
+        logger.warning("2. The motif_dataset.jsonl file with family labels")
         
         return files
     
@@ -336,7 +398,7 @@ class MOTIFDatasetProcessor:
         Process files and create train/test splits with images.
         
         Args:
-            files: Dictionary containing malware and benign file lists
+            files: Dictionary containing family_name -> [file_paths] mapping
             
         Returns:
             Dictionary with processing statistics
@@ -347,96 +409,135 @@ class MOTIFDatasetProcessor:
             "failed": 0,
             "train_count": 0,
             "test_count": 0,
-            "malware_count": 0,
-            "benign_count": 0
+            "families": {},
+            "num_families": len(files)
         }
         
-        # Process each class
-        for class_name, file_list in files.items():
+        # Create directories for all families
+        for family_name in files.keys():
+            for split_dir in [self.train_dir, self.test_dir]:
+                (split_dir / family_name).mkdir(parents=True, exist_ok=True)
+            stats["families"][family_name] = {"train": 0, "test": 0, "total": 0}
+        
+        # Process each family
+        for family_name, file_list in files.items():
             if not file_list:
-                logger.warning(f"No {class_name} files found")
+                logger.warning(f"No {family_name} files found")
                 continue
                 
-            logger.info(f"Processing {len(file_list)} {class_name} files...")
+            logger.info(f"Processing {len(file_list)} {family_name} files...")
             
-            # Create train/test split
-            train_files, test_files = train_test_split(
-                file_list, 
-                test_size=self.test_size, 
-                random_state=42,
-                shuffle=True
-            )
+            # Create train/test split for this family
+            if len(file_list) == 1:
+                # If only one file, put it in training
+                train_files = file_list
+                test_files = []
+                logger.warning(f"Family {family_name} has only 1 sample, placing in training set")
+            else:
+                train_files, test_files = train_test_split(
+                    file_list, 
+                    test_size=self.test_size, 
+                    random_state=42,
+                    shuffle=True
+                )
             
             # Process training files
             for i, file_path in enumerate(train_files):
-                output_name = f"{class_name}_{i:06d}_{self.get_file_hash(file_path)[:8]}.png"
-                output_path = self.train_dir / class_name / output_name
+                output_name = f"{family_name}_{i:06d}_{self.get_file_hash(file_path)[:8]}.png"
+                output_path = self.train_dir / family_name / output_name
                 
                 image_array = self.image_generator.binary_to_image(file_path, str(output_path))
                 
                 if image_array is not None:
                     stats["successful"] += 1
                     stats["train_count"] += 1
-                    stats[f"{class_name}_count"] += 1
+                    stats["families"][family_name]["train"] += 1
+                    stats["families"][family_name]["total"] += 1
                 else:
                     stats["failed"] += 1
                 
                 stats["total_processed"] += 1
                 
-                if (i + 1) % 100 == 0:
-                    logger.info(f"Processed {i + 1}/{len(train_files)} {class_name} training files")
+                if (i + 1) % 50 == 0:
+                    logger.info(f"Processed {i + 1}/{len(train_files)} {family_name} training files")
             
             # Process testing files
             for i, file_path in enumerate(test_files):
-                output_name = f"{class_name}_{i:06d}_{self.get_file_hash(file_path)[:8]}.png"
-                output_path = self.test_dir / class_name / output_name
+                output_name = f"{family_name}_{i:06d}_{self.get_file_hash(file_path)[:8]}.png"
+                output_path = self.test_dir / family_name / output_name
                 
                 image_array = self.image_generator.binary_to_image(file_path, str(output_path))
                 
                 if image_array is not None:
                     stats["successful"] += 1
                     stats["test_count"] += 1
-                    stats[f"{class_name}_count"] += 1
+                    stats["families"][family_name]["test"] += 1
+                    stats["families"][family_name]["total"] += 1
                 else:
                     stats["failed"] += 1
                 
                 stats["total_processed"] += 1
                 
-                if (i + 1) % 100 == 0:
-                    logger.info(f"Processed {i + 1}/{len(test_files)} {class_name} testing files")
+                if (i + 1) % 50 == 0:
+                    logger.info(f"Processed {i + 1}/{len(test_files)} {family_name} testing files")
+            
+            logger.info(f"Completed {family_name}: {stats['families'][family_name]['total']} total samples")
         
         return stats
     
     def create_dataset_info(self, stats: Dict[str, any]) -> None:
         """Create dataset information file."""
+        # Create class mapping (family_name -> class_id)
+        family_names = sorted(stats["families"].keys())
+        classes = {str(i): family_name for i, family_name in enumerate(family_names)}
+        class_to_id = {family_name: str(i) for i, family_name in enumerate(family_names)}
+        
+        # Create detailed split information
+        split_info = {
+            "train": {"total": stats["train_count"], "families": {}},
+            "test": {"total": stats["test_count"], "families": {}},
+        }
+        
+        for family_name, family_stats in stats["families"].items():
+            split_info["train"]["families"][family_name] = {
+                "count": family_stats["train"],
+                "class_id": class_to_id[family_name]
+            }
+            split_info["test"]["families"][family_name] = {
+                "count": family_stats["test"],
+                "class_id": class_to_id[family_name]
+            }
+        
         dataset_info = {
-            "dataset_name": "MOTIF_Malware_Images",
+            "dataset_name": "MOTIF_Malware_Family_Images",
+            "dataset_type": "multi_class_family_classification",
             "image_size": self.image_size,
             "test_size": self.test_size,
-            "statistics": stats,
-            "classes": {
-                "0": "benign",
-                "1": "malware"
+            "num_classes": len(family_names),
+            "statistics": {
+                "total_processed": stats["total_processed"],
+                "successful": stats["successful"],
+                "failed": stats["failed"],
+                "train_count": stats["train_count"],
+                "test_count": stats["test_count"],
+                "num_families": stats["num_families"]
             },
-            "split_info": {
-                "train": {
-                    "total": stats["train_count"],
-                    "malware": len(list((self.train_dir / "malware").glob("*.png"))),
-                    "benign": len(list((self.train_dir / "benign").glob("*.png")))
-                },
-                "test": {
-                    "total": stats["test_count"],
-                    "malware": len(list((self.test_dir / "malware").glob("*.png"))),
-                    "benign": len(list((self.test_dir / "benign").glob("*.png")))
-                }
-            }
+            "classes": classes,  # class_id -> family_name mapping
+            "class_to_id": class_to_id,  # family_name -> class_id mapping
+            "split_info": split_info,
+            "family_statistics": stats["families"]
         }
+        
+        # Add family mapping if available
+        if hasattr(self, 'family_mapping') and self.family_mapping:
+            dataset_info["original_family_mapping"] = self.family_mapping
         
         info_path = self.output_dir / "dataset_info.json"
         with open(info_path, 'w') as f:
             json.dump(dataset_info, f, indent=2)
         
         logger.info(f"Dataset information saved to {info_path}")
+        logger.info(f"Multi-class dataset with {len(family_names)} malware families")
     
     def generate_dataset(self) -> None:
         """Main method to generate the complete dataset."""
@@ -468,26 +569,45 @@ class MOTIFDatasetProcessor:
         logger.info(f"Failed conversions: {stats['failed']}")
         logger.info(f"Training images: {stats['train_count']}")
         logger.info(f"Testing images: {stats['test_count']}")
-        logger.info(f"Malware samples: {stats['malware_count']}")
-        logger.info(f"Benign samples: {stats['benign_count']}")
+        logger.info(f"Number of malware families: {stats['num_families']}")
+        
+        # Show top families by sample count
+        family_counts = [(name, data["total"]) for name, data in stats["families"].items()]
+        family_counts.sort(key=lambda x: x[1], reverse=True)
+        
+        logger.info("\nTop 10 families by sample count:")
+        for i, (family_name, count) in enumerate(family_counts[:10]):
+            logger.info(f"  {i+1}. {family_name}: {count} samples")
+        
+        if len(family_counts) > 10:
+            logger.info(f"  ... and {len(family_counts) - 10} more families")
+        
         logger.info(f"\nDataset saved to: {self.output_dir}")
 
 
 def main():
     """Main function with command line argument parsing."""
     parser = argparse.ArgumentParser(
-        description="Generate image dataset from MOTIF malware dataset",
+        description="Generate image dataset from MOTIF malware dataset for multi-class family classification",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
+MOTIF Dataset Information:
+    The MOTIF dataset contains 3,095 malware samples from 454 different families.
+    This script generates images for multi-class family classification, not binary malware/benign classification.
+    
+    Required files:
+    - motif_dataset.jsonl: Contains family labels for each sample
+    - MOTIF_defanged/: Directory containing the disarmed binary files
+    
 Examples:
-    # Basic usage
-    python generate_image.py --data_dir /path/to/motif --output_dir ./dataset
+    # Basic usage for family classification
+    python generate_image.py --data_dir /path/to/motif --output_dir ./family_dataset
     
     # Custom image size and test split
-    python generate_image.py --data_dir /path/to/motif --output_dir ./dataset --image_size 512 --test_size 0.3
+    python generate_image.py --data_dir /path/to/motif --output_dir ./family_dataset --image_size 512 --test_size 0.3
     
     # Verbose logging
-    python generate_image.py --data_dir /path/to/motif --output_dir ./dataset --verbose
+    python generate_image.py --data_dir /path/to/motif --output_dir ./family_dataset --verbose
         """
     )
     
@@ -495,14 +615,14 @@ Examples:
         '--data_dir', 
         type=str, 
         required=True,
-        help='Path to the MOTIF dataset directory containing malware and benign files'
+        help='Path to the MOTIF dataset directory containing motif_dataset.jsonl and MOTIF_defanged/ folder'
     )
     
     parser.add_argument(
         '--output_dir', 
         type=str, 
-        default='./motif_dataset',
-        help='Directory to save the generated image dataset (default: ./motif_dataset)'
+        default='./motif_family_dataset',
+        help='Directory to save the generated multi-class family image dataset (default: ./motif_family_dataset)'
     )
     
     parser.add_argument(

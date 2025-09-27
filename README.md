@@ -48,19 +48,29 @@ The MOTIF dataset is directly supported! Follow these steps:
    7z x MOTIF.7z  # Password: i_assume_all_risk_opening_malware
    ```
 
-3. **Analyze and setup your MOTIF dataset:**
+3. **Setup GPU acceleration (Mac M4/Apple Silicon):**
+   ```bash
+   python setup_mac_m4.py  # Check and optimize PyTorch for Apple Silicon
+   ```
+
+4. **Analyze and setup your MOTIF dataset:**
    ```bash
    python setup_motif.py /path/to/MOTIF
    ```
 
-4. **Generate malware images:**
+5. **Generate malware images:**
    ```bash
    python generate_image.py --data_dir /path/to/MOTIF --output_dir ./motif_images
    ```
 
-5. **Verify methodology compliance:**
+6. **Verify methodology compliance:**
    ```bash
    python verify_nataraj_images.py --image_dir ./motif_images/train/malware
+   ```
+
+7. **Train with GPU acceleration:**
+   ```bash
+   python train_cnn_example.py --dataset_dir ./motif_images --epochs 20 --batch_size 32
    ```
 
 ### For VM Environment
@@ -108,6 +118,7 @@ The MOTIF dataset is directly supported! Follow these steps:
 
 - **`generate_image.py`** - Main script to convert malware binaries to grayscale images (Nataraj methodology)
 - **`setup_motif.py`** - MOTIF dataset configuration and analysis helper
+- **`setup_mac_m4.py`** - Mac M4/Apple Silicon GPU setup and optimization
 - **`verify_nataraj_images.py`** - Verify that generated images follow the correct methodology
 - **`visualize_dataset.py`** - Visualize and validate the generated image dataset  
 - **`dataset_loader.py`** - PyTorch DataLoader for the generated images
