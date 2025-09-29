@@ -6,15 +6,11 @@ Dataset Visualization and Validation Tool
 This script provides utilities to visualize and validate the generated malware image dataset.
 Supports both binary classification and multi-class family classification datasets.
 
-For multi-class datasets (454 malware families):
+For multi-class datasets:
 - Family distribution analysis
 - Class imbalance visualization  
 - Top families by sample count
 - Comprehensive family statistics
-
-For binary datasets:
-- Basic malware/benign statistics
-- Train/test split analysis
 
 Usage:
     # Basic visualization

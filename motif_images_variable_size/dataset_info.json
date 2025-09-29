@@ -1,0 +1,8019 @@
+{
+  "dataset_name": "MOTIF_Malware_Family_Images",
+  "dataset_type": "multi_class_family_classification",
+  "image_size": 256,
+  "test_size": 0.2,
+  "num_classes": 502,
+  "statistics": {
+    "total_processed": 3095,
+    "successful": 3095,
+    "failed": 0,
+    "train_count": 2365,
+    "test_count": 730,
+    "num_families": 502
+  },
+  "classes": {
+    "0": "7ev3n",
+    "1": "abaddonpos",
+    "2": "acidbox",
+    "3": "adchiate",
+    "4": "advisorsbot",
+    "5": "adylkuzz",
+    "6": "agenttesla",
+    "7": "alice",
+    "8": "amadey",
+    "9": "anatova",
+    "10": "anchor",
+    "11": "anchordns",
+    "12": "andromeda",
+    "13": "andromut",
+    "14": "arkei",
+    "15": "artfulpie",
+    "16": "artradownloader",
+    "17": "astaroth",
+    "18": "asyncrat",
+    "19": "athenago",
+    "20": "atmii",
+    "21": "atmitch",
+    "22": "atmosphere",
+    "23": "atmripper",
+    "24": "atmspitter",
+    "25": "atmtest",
+    "26": "atmwizx",
+    "27": "attor",
+    "28": "avatar",
+    "29": "avemaria",
+    "30": "avzhan",
+    "31": "azorult",
+    "32": "babymetal",
+    "33": "badcall",
+    "34": "badrabbit",
+    "35": "baldr",
+    "36": "balkandoor",
+    "37": "bandook",
+    "38": "bart",
+    "39": "bazarbackdoor",
+    "40": "bazarloader",
+    "41": "bedep",
+    "42": "beendoor",
+    "43": "beerbot",
+    "44": "bergard",
+    "45": "betabot",
+    "46": "bezigate",
+    "47": "bioload",
+    "48": "birddog",
+    "49": "biskvit",
+    "50": "bistromath",
+    "51": "blackenergy",
+    "52": "blacklambert",
+    "53": "blackmoon",
+    "54": "blind",
+    "55": "blindingcan",
+    "56": "bluecore",
+    "57": "boostwrite",
+    "58": "brlock",
+    "59": "buer",
+    "60": "buerak",
+    "61": "buffetline",
+    "62": "buran",
+    "63": "cannibalrat",
+    "64": "cannon",
+    "65": "carbanak",
+    "66": "catchamas",
+    "67": "ceidpagelock",
+    "68": "centerpos",
+    "69": "cerber",
+    "70": "chessylite",
+    "71": "chinachopper",
+    "72": "chinoxy",
+    "73": "chtonic",
+    "74": "cinarat",
+    "75": "clop",
+    "76": "cobint",
+    "77": "comrat",
+    "78": "contopee",
+    "79": "copperhedge",
+    "80": "cotxrat",
+    "81": "cowersnail",
+    "82": "crackshot",
+    "83": "crat",
+    "84": "crimson",
+    "85": "crimsonrat",
+    "86": "crowdedflounder",
+    "87": "crutch",
+    "88": "crypt0l0cker",
+    "89": "crypt38",
+    "90": "crypt888",
+    "91": "cryptbot",
+    "92": "cryptfile2",
+    "93": "cryptoshuffler",
+    "94": "cryptowall",
+    "95": "cryptxxx",
+    "96": "crypy",
+    "97": "crysis",
+    "98": "cspy",
+    "99": "cutlet",
+    "100": "cyperine",
+    "101": "cyrat",
+    "102": "cyst",
+    "103": "danabot",
+    "104": "darkcomet",
+    "105": "darkcrystal",
+    "106": "darktequila",
+    "107": "darkvnc",
+    "108": "daserf",
+    "109": "datper",
+    "110": "dealply",
+    "111": "deathransom",
+    "112": "defray",
+    "113": "deloader",
+    "114": "delphstats",
+    "115": "deprimon",
+    "116": "dharma",
+    "117": "diamondfox",
+    "118": "discordiaminer",
+    "119": "dmalocker",
+    "120": "dnspionage",
+    "121": "dorshel",
+    "122": "dot",
+    "123": "downdelph",
+    "124": "dreambot",
+    "125": "dridex",
+    "126": "driftpin",
+    "127": "dripion",
+    "128": "dropbook",
+    "129": "dyre",
+    "130": "dyzap",
+    "131": "eccentricbandwagon",
+    "132": "egregor",
+    "133": "ekans",
+    "134": "electricfish",
+    "135": "emdivi",
+    "136": "emotet",
+    "137": "eris",
+    "138": "evilnest",
+    "139": "evotob",
+    "140": "evrial",
+    "141": "expetr",
+    "142": "fakecry",
+    "143": "fallchill",
+    "144": "fareit",
+    "145": "fastcash",
+    "146": "fatduke",
+    "147": "felismus",
+    "148": "filensfer",
+    "149": "finfisher",
+    "150": "finspy",
+    "151": "flawedammyy",
+    "152": "flawedgrace",
+    "153": "fleercivet",
+    "154": "flokibot",
+    "155": "formbook",
+    "156": "fortunecrypt",
+    "157": "foudre",
+    "158": "freenki",
+    "159": "fsociety",
+    "160": "funnydream",
+    "161": "gamefish",
+    "162": "gandcrab",
+    "163": "garrantydecrypt",
+    "164": "gazer",
+    "165": "gearshift",
+    "166": "get2",
+    "167": "gh0st",
+    "168": "gh0strat",
+    "169": "glitchpos",
+    "170": "globeimposter",
+    "171": "godzilla",
+    "172": "gootkit",
+    "173": "gozi",
+    "174": "goziisfb",
+    "175": "goznym",
+    "176": "grabbot",
+    "177": "gravityrat",
+    "178": "greendispenser",
+    "179": "guildma",
+    "180": "guloader",
+    "181": "h1n1loader",
+    "182": "hadeslocker",
+    "183": "hakbit",
+    "184": "hancitor",
+    "185": "hannotog",
+    "186": "hawkeye",
+    "187": "helloworld",
+    "188": "herbst",
+    "189": "heriplor",
+    "190": "hermes",
+    "191": "highnoon",
+    "192": "hoplight",
+    "193": "hotcroissant",
+    "194": "htran",
+    "195": "hupigon",
+    "196": "hussarini",
+    "197": "hyperbro",
+    "198": "icedid",
+    "199": "icerat",
+    "200": "imminent",
+    "201": "imminentmonitor",
+    "202": "indigodrop",
+    "203": "intelrapid",
+    "204": "isfb",
+    "205": "ismagent",
+    "206": "isminjector",
+    "207": "itranslator",
+    "208": "jaff",
+    "209": "jhonerat",
+    "210": "jigsaw",
+    "211": "jimmy",
+    "212": "jolob",
+    "213": "jumpall",
+    "214": "karkoff",
+    "215": "kasidet",
+    "216": "kbot",
+    "217": "kegtap",
+    "218": "ketrican",
+    "219": "keymarble",
+    "220": "keypass",
+    "221": "kghspy",
+    "222": "killdisk",
+    "223": "kingminer",
+    "224": "kingofhearts",
+    "225": "konni",
+    "226": "korplug",
+    "227": "kovter",
+    "228": "kpot",
+    "229": "krakencryptor",
+    "230": "kronos",
+    "231": "kuik",
+    "232": "kwampirs",
+    "233": "latentbot",
+    "234": "leash",
+    "235": "lechiffre",
+    "236": "ligsterac",
+    "237": "lockcrypt",
+    "238": "lockergoga",
+    "239": "locky",
+    "240": "loda",
+    "241": "lodarat",
+    "242": "lojax",
+    "243": "lokibot",
+    "244": "longwatch",
+    "245": "loocipher",
+    "246": "lowkey",
+    "247": "luminositylink",
+    "248": "lurk",
+    "249": "magala",
+    "250": "magniber",
+    "251": "maktub",
+    "252": "mamba",
+    "253": "marsjoke",
+    "254": "masslogger",
+    "255": "maze",
+    "256": "medusalocker",
+    "257": "mekotio",
+    "258": "melcoz",
+    "259": "metamorfo",
+    "260": "mgbot",
+    "261": "mikroceen",
+    "262": "milum",
+    "263": "miniduke",
+    "264": "mischa",
+    "265": "mmlocker",
+    "266": "moker",
+    "267": "mokes",
+    "268": "mole",
+    "269": "montysthree",
+    "270": "mosaicregressor",
+    "271": "mpkbot",
+    "272": "mrwhite",
+    "273": "multigrain",
+    "274": "nanocore",
+    "275": "nanolocker",
+    "276": "navrat",
+    "277": "nazar",
+    "278": "nemty",
+    "279": "neopocket",
+    "280": "netflash",
+    "281": "netsupport",
+    "282": "netwire",
+    "283": "neurevt",
+    "284": "neutrino",
+    "285": "neutrinobot",
+    "286": "neutrinopos",
+    "287": "newcore",
+    "288": "nextmanhistory",
+    "289": "nibiru",
+    "290": "nitol",
+    "291": "njrat",
+    "292": "nocturnal",
+    "293": "nonransomware",
+    "294": "notestuk",
+    "295": "notpetya",
+    "296": "nyetya",
+    "297": "nymaim",
+    "298": "obliquerat",
+    "299": "octopus",
+    "300": "odinaff",
+    "301": "olympicdestroyer",
+    "302": "oopsie",
+    "303": "osiris",
+    "304": "osno",
+    "305": "ovidiy",
+    "306": "ozone",
+    "307": "padcrypt",
+    "308": "pandabanker",
+    "309": "parallax",
+    "310": "parasitehttp",
+    "311": "pclocker",
+    "312": "pebbledash",
+    "313": "pekraut",
+    "314": "peppyrat",
+    "315": "petrwrap",
+    "316": "petya",
+    "317": "phantomnet",
+    "318": "philadelphia",
+    "319": "phobos",
+    "320": "phorpiex",
+    "321": "pickpocket",
+    "322": "pinchduke",
+    "323": "piolin",
+    "324": "pipemon",
+    "325": "pirpi",
+    "326": "plead",
+    "327": "ploutus",
+    "328": "plugx",
+    "329": "plurox",
+    "330": "poisonivy",
+    "331": "poisonplug",
+    "332": "pokemongo",
+    "333": "polyglot",
+    "334": "polyglotduke",
+    "335": "pony",
+    "336": "poohmilk",
+    "337": "portreuse",
+    "338": "powerspritz",
+    "339": "powerstats",
+    "340": "powgoop",
+    "341": "predator",
+    "342": "prilex",
+    "343": "princesslocker",
+    "344": "prometei",
+    "345": "proteus",
+    "346": "psixbot",
+    "347": "pushdo",
+    "348": "pykbot",
+    "349": "qbot",
+    "350": "quantloader",
+    "351": "quasar",
+    "352": "quasarrat",
+    "353": "queenofclubs",
+    "354": "queenofhearts",
+    "355": "raccoonstealer",
+    "356": "radrat",
+    "357": "raindrop",
+    "358": "ramnit",
+    "359": "ramsay",
+    "360": "ranscam",
+    "361": "ransoc",
+    "362": "ransom32",
+    "363": "ransomexx",
+    "364": "rapid",
+    "365": "rapidransomware",
+    "366": "rarog",
+    "367": "ratankbapos",
+    "368": "ratvermin",
+    "369": "rc2fm",
+    "370": "reactorbot",
+    "371": "redaman",
+    "372": "redline",
+    "373": "rekaf",
+    "374": "remcos",
+    "375": "remexi",
+    "376": "remtasu",
+    "377": "retefe",
+    "378": "retriever",
+    "379": "reveton",
+    "380": "revil",
+    "381": "rgdoor",
+    "382": "rockloader",
+    "383": "roguerobin",
+    "384": "roilocker",
+    "385": "rokku",
+    "386": "rokrat",
+    "387": "rozena",
+    "388": "ruckguv",
+    "389": "rurktar",
+    "390": "ryuk",
+    "391": "sage",
+    "392": "sagerunex",
+    "393": "sality",
+    "394": "samsa",
+    "395": "samsam",
+    "396": "satana",
+    "397": "sathurbot",
+    "398": "scarab",
+    "399": "scarabey",
+    "400": "sdbbot",
+    "401": "sectoprat",
+    "402": "sedreco",
+    "403": "seduploader",
+    "404": "seon",
+    "405": "sepulcher",
+    "406": "servhelper",
+    "407": "shadowpad",
+    "408": "shakti",
+    "409": "shamoon",
+    "410": "shapeshift",
+    "411": "sharpstage",
+    "412": "sharpstats",
+    "413": "shione",
+    "414": "sigma",
+    "415": "silentbruter",
+    "416": "silentnight",
+    "417": "simplecred",
+    "418": "skimer",
+    "419": "skimerwc",
+    "420": "skipper",
+    "421": "smokebot",
+    "422": "smokeloader",
+    "423": "snatch",
+    "424": "sobaken",
+    "425": "sodin",
+    "426": "sodinokibi",
+    "427": "sorefang",
+    "428": "spark",
+    "429": "splm",
+    "430": "spora",
+    "431": "stampado",
+    "432": "starloader",
+    "433": "stillerx",
+    "434": "stonedrill",
+    "435": "suceful",
+    "436": "sunburst",
+    "437": "supernova",
+    "438": "synack",
+    "439": "systembc",
+    "440": "taintedscribe",
+    "441": "teardrop",
+    "442": "telecrypt",
+    "443": "terdot",
+    "444": "teslacrypt",
+    "445": "thanatos",
+    "446": "thanos",
+    "447": "tinba",
+    "448": "tinyloader",
+    "449": "tonedeaf",
+    "450": "trat",
+    "451": "treasurehunt",
+    "452": "trickbot",
+    "453": "trickster",
+    "454": "trik",
+    "455": "triton",
+    "456": "try2cry",
+    "457": "turnedup",
+    "458": "tvspy",
+    "459": "typeframe",
+    "460": "tyupkin",
+    "461": "upaskit",
+    "462": "urlzone",
+    "463": "ursnif",
+    "464": "usbculprit",
+    "465": "valak",
+    "466": "varenyky",
+    "467": "vawtrak",
+    "468": "vcrodat",
+    "469": "vega",
+    "470": "venuslocker",
+    "471": "vermin",
+    "472": "vhd",
+    "473": "vidar",
+    "474": "virdetdoor",
+    "475": "virlock",
+    "476": "vivaciousgift",
+    "477": "wali",
+    "478": "wannacry",
+    "479": "warzone",
+    "480": "wastedlocker",
+    "481": "wellmess",
+    "482": "winnti",
+    "483": "winpot",
+    "484": "xagent",
+    "485": "xdata",
+    "486": "xddown",
+    "487": "xmrig",
+    "488": "xpan",
+    "489": "xtunnel",
+    "490": "xxmm",
+    "491": "yatron",
+    "492": "yoddos",
+    "493": "zcrypt",
+    "494": "zebrocy",
+    "495": "zegost",
+    "496": "zeppelin",
+    "497": "zerot",
+    "498": "zeus",
+    "499": "zeuspanda",
+    "500": "zloader",
+    "501": "zyklon"
+  },
+  "class_to_id": {
+    "7ev3n": "0",
+    "abaddonpos": "1",
+    "acidbox": "2",
+    "adchiate": "3",
+    "advisorsbot": "4",
+    "adylkuzz": "5",
+    "agenttesla": "6",
+    "alice": "7",
+    "amadey": "8",
+    "anatova": "9",
+    "anchor": "10",
+    "anchordns": "11",
+    "andromeda": "12",
+    "andromut": "13",
+    "arkei": "14",
+    "artfulpie": "15",
+    "artradownloader": "16",
+    "astaroth": "17",
+    "asyncrat": "18",
+    "athenago": "19",
+    "atmii": "20",
+    "atmitch": "21",
+    "atmosphere": "22",
+    "atmripper": "23",
+    "atmspitter": "24",
+    "atmtest": "25",
+    "atmwizx": "26",
+    "attor": "27",
+    "avatar": "28",
+    "avemaria": "29",
+    "avzhan": "30",
+    "azorult": "31",
+    "babymetal": "32",
+    "badcall": "33",
+    "badrabbit": "34",
+    "baldr": "35",
+    "balkandoor": "36",
+    "bandook": "37",
+    "bart": "38",
+    "bazarbackdoor": "39",
+    "bazarloader": "40",
+    "bedep": "41",
+    "beendoor": "42",
+    "beerbot": "43",
+    "bergard": "44",
+    "betabot": "45",
+    "bezigate": "46",
+    "bioload": "47",
+    "birddog": "48",
+    "biskvit": "49",
+    "bistromath": "50",
+    "blackenergy": "51",
+    "blacklambert": "52",
+    "blackmoon": "53",
+    "blind": "54",
+    "blindingcan": "55",
+    "bluecore": "56",
+    "boostwrite": "57",
+    "brlock": "58",
+    "buer": "59",
+    "buerak": "60",
+    "buffetline": "61",
+    "buran": "62",
+    "cannibalrat": "63",
+    "cannon": "64",
+    "carbanak": "65",
+    "catchamas": "66",
+    "ceidpagelock": "67",
+    "centerpos": "68",
+    "cerber": "69",
+    "chessylite": "70",
+    "chinachopper": "71",
+    "chinoxy": "72",
+    "chtonic": "73",
+    "cinarat": "74",
+    "clop": "75",
+    "cobint": "76",
+    "comrat": "77",
+    "contopee": "78",
+    "copperhedge": "79",
+    "cotxrat": "80",
+    "cowersnail": "81",
+    "crackshot": "82",
+    "crat": "83",
+    "crimson": "84",
+    "crimsonrat": "85",
+    "crowdedflounder": "86",
+    "crutch": "87",
+    "crypt0l0cker": "88",
+    "crypt38": "89",
+    "crypt888": "90",
+    "cryptbot": "91",
+    "cryptfile2": "92",
+    "cryptoshuffler": "93",
+    "cryptowall": "94",
+    "cryptxxx": "95",
+    "crypy": "96",
+    "crysis": "97",
+    "cspy": "98",
+    "cutlet": "99",
+    "cyperine": "100",
+    "cyrat": "101",
+    "cyst": "102",
+    "danabot": "103",
+    "darkcomet": "104",
+    "darkcrystal": "105",
+    "darktequila": "106",
+    "darkvnc": "107",
+    "daserf": "108",
+    "datper": "109",
+    "dealply": "110",
+    "deathransom": "111",
+    "defray": "112",
+    "deloader": "113",
+    "delphstats": "114",
+    "deprimon": "115",
+    "dharma": "116",
+    "diamondfox": "117",
+    "discordiaminer": "118",
+    "dmalocker": "119",
+    "dnspionage": "120",
+    "dorshel": "121",
+    "dot": "122",
+    "downdelph": "123",
+    "dreambot": "124",
+    "dridex": "125",
+    "driftpin": "126",
+    "dripion": "127",
+    "dropbook": "128",
+    "dyre": "129",
+    "dyzap": "130",
+    "eccentricbandwagon": "131",
+    "egregor": "132",
+    "ekans": "133",
+    "electricfish": "134",
+    "emdivi": "135",
+    "emotet": "136",
+    "eris": "137",
+    "evilnest": "138",
+    "evotob": "139",
+    "evrial": "140",
+    "expetr": "141",
+    "fakecry": "142",
+    "fallchill": "143",
+    "fareit": "144",
+    "fastcash": "145",
+    "fatduke": "146",
+    "felismus": "147",
+    "filensfer": "148",
+    "finfisher": "149",
+    "finspy": "150",
+    "flawedammyy": "151",
+    "flawedgrace": "152",
+    "fleercivet": "153",
+    "flokibot": "154",
+    "formbook": "155",
+    "fortunecrypt": "156",
+    "foudre": "157",
+    "freenki": "158",
+    "fsociety": "159",
+    "funnydream": "160",
+    "gamefish": "161",
+    "gandcrab": "162",
+    "garrantydecrypt": "163",
+    "gazer": "164",
+    "gearshift": "165",
+    "get2": "166",
+    "gh0st": "167",
+    "gh0strat": "168",
+    "glitchpos": "169",
+    "globeimposter": "170",
+    "godzilla": "171",
+    "gootkit": "172",
+    "gozi": "173",
+    "goziisfb": "174",
+    "goznym": "175",
+    "grabbot": "176",
+    "gravityrat": "177",
+    "greendispenser": "178",
+    "guildma": "179",
+    "guloader": "180",
+    "h1n1loader": "181",
+    "hadeslocker": "182",
+    "hakbit": "183",
+    "hancitor": "184",
+    "hannotog": "185",
+    "hawkeye": "186",
+    "helloworld": "187",
+    "herbst": "188",
+    "heriplor": "189",
+    "hermes": "190",
+    "highnoon": "191",
+    "hoplight": "192",
+    "hotcroissant": "193",
+    "htran": "194",
+    "hupigon": "195",
+    "hussarini": "196",
+    "hyperbro": "197",
+    "icedid": "198",
+    "icerat": "199",
+    "imminent": "200",
+    "imminentmonitor": "201",
+    "indigodrop": "202",
+    "intelrapid": "203",
+    "isfb": "204",
+    "ismagent": "205",
+    "isminjector": "206",
+    "itranslator": "207",
+    "jaff": "208",
+    "jhonerat": "209",
+    "jigsaw": "210",
+    "jimmy": "211",
+    "jolob": "212",
+    "jumpall": "213",
+    "karkoff": "214",
+    "kasidet": "215",
+    "kbot": "216",
+    "kegtap": "217",
+    "ketrican": "218",
+    "keymarble": "219",
+    "keypass": "220",
+    "kghspy": "221",
+    "killdisk": "222",
+    "kingminer": "223",
+    "kingofhearts": "224",
+    "konni": "225",
+    "korplug": "226",
+    "kovter": "227",
+    "kpot": "228",
+    "krakencryptor": "229",
+    "kronos": "230",
+    "kuik": "231",
+    "kwampirs": "232",
+    "latentbot": "233",
+    "leash": "234",
+    "lechiffre": "235",
+    "ligsterac": "236",
+    "lockcrypt": "237",
+    "lockergoga": "238",
+    "locky": "239",
+    "loda": "240",
+    "lodarat": "241",
+    "lojax": "242",
+    "lokibot": "243",
+    "longwatch": "244",
+    "loocipher": "245",
+    "lowkey": "246",
+    "luminositylink": "247",
+    "lurk": "248",
+    "magala": "249",
+    "magniber": "250",
+    "maktub": "251",
+    "mamba": "252",
+    "marsjoke": "253",
+    "masslogger": "254",
+    "maze": "255",
+    "medusalocker": "256",
+    "mekotio": "257",
+    "melcoz": "258",
+    "metamorfo": "259",
+    "mgbot": "260",
+    "mikroceen": "261",
+    "milum": "262",
+    "miniduke": "263",
+    "mischa": "264",
+    "mmlocker": "265",
+    "moker": "266",
+    "mokes": "267",
+    "mole": "268",
+    "montysthree": "269",
+    "mosaicregressor": "270",
+    "mpkbot": "271",
+    "mrwhite": "272",
+    "multigrain": "273",
+    "nanocore": "274",
+    "nanolocker": "275",
+    "navrat": "276",
+    "nazar": "277",
+    "nemty": "278",
+    "neopocket": "279",
+    "netflash": "280",
+    "netsupport": "281",
+    "netwire": "282",
+    "neurevt": "283",
+    "neutrino": "284",
+    "neutrinobot": "285",
+    "neutrinopos": "286",
+    "newcore": "287",
+    "nextmanhistory": "288",
+    "nibiru": "289",
+    "nitol": "290",
+    "njrat": "291",
+    "nocturnal": "292",
+    "nonransomware": "293",
+    "notestuk": "294",
+    "notpetya": "295",
+    "nyetya": "296",
+    "nymaim": "297",
+    "obliquerat": "298",
+    "octopus": "299",
+    "odinaff": "300",
+    "olympicdestroyer": "301",
+    "oopsie": "302",
+    "osiris": "303",
+    "osno": "304",
+    "ovidiy": "305",
+    "ozone": "306",
+    "padcrypt": "307",
+    "pandabanker": "308",
+    "parallax": "309",
+    "parasitehttp": "310",
+    "pclocker": "311",
+    "pebbledash": "312",
+    "pekraut": "313",
+    "peppyrat": "314",
+    "petrwrap": "315",
+    "petya": "316",
+    "phantomnet": "317",
+    "philadelphia": "318",
+    "phobos": "319",
+    "phorpiex": "320",
+    "pickpocket": "321",
+    "pinchduke": "322",
+    "piolin": "323",
+    "pipemon": "324",
+    "pirpi": "325",
+    "plead": "326",
+    "ploutus": "327",
+    "plugx": "328",
+    "plurox": "329",
+    "poisonivy": "330",
+    "poisonplug": "331",
+    "pokemongo": "332",
+    "polyglot": "333",
+    "polyglotduke": "334",
+    "pony": "335",
+    "poohmilk": "336",
+    "portreuse": "337",
+    "powerspritz": "338",
+    "powerstats": "339",
+    "powgoop": "340",
+    "predator": "341",
+    "prilex": "342",
+    "princesslocker": "343",
+    "prometei": "344",
+    "proteus": "345",
+    "psixbot": "346",
+    "pushdo": "347",
+    "pykbot": "348",
+    "qbot": "349",
+    "quantloader": "350",
+    "quasar": "351",
+    "quasarrat": "352",
+    "queenofclubs": "353",
+    "queenofhearts": "354",
+    "raccoonstealer": "355",
+    "radrat": "356",
+    "raindrop": "357",
+    "ramnit": "358",
+    "ramsay": "359",
+    "ranscam": "360",
+    "ransoc": "361",
+    "ransom32": "362",
+    "ransomexx": "363",
+    "rapid": "364",
+    "rapidransomware": "365",
+    "rarog": "366",
+    "ratankbapos": "367",
+    "ratvermin": "368",
+    "rc2fm": "369",
+    "reactorbot": "370",
+    "redaman": "371",
+    "redline": "372",
+    "rekaf": "373",
+    "remcos": "374",
+    "remexi": "375",
+    "remtasu": "376",
+    "retefe": "377",
+    "retriever": "378",
+    "reveton": "379",
+    "revil": "380",
+    "rgdoor": "381",
+    "rockloader": "382",
+    "roguerobin": "383",
+    "roilocker": "384",
+    "rokku": "385",
+    "rokrat": "386",
+    "rozena": "387",
+    "ruckguv": "388",
+    "rurktar": "389",
+    "ryuk": "390",
+    "sage": "391",
+    "sagerunex": "392",
+    "sality": "393",
+    "samsa": "394",
+    "samsam": "395",
+    "satana": "396",
+    "sathurbot": "397",
+    "scarab": "398",
+    "scarabey": "399",
+    "sdbbot": "400",
+    "sectoprat": "401",
+    "sedreco": "402",
+    "seduploader": "403",
+    "seon": "404",
+    "sepulcher": "405",
+    "servhelper": "406",
+    "shadowpad": "407",
+    "shakti": "408",
+    "shamoon": "409",
+    "shapeshift": "410",
+    "sharpstage": "411",
+    "sharpstats": "412",
+    "shione": "413",
+    "sigma": "414",
+    "silentbruter": "415",
+    "silentnight": "416",
+    "simplecred": "417",
+    "skimer": "418",
+    "skimerwc": "419",
+    "skipper": "420",
+    "smokebot": "421",
+    "smokeloader": "422",
+    "snatch": "423",
+    "sobaken": "424",
+    "sodin": "425",
+    "sodinokibi": "426",
+    "sorefang": "427",
+    "spark": "428",
+    "splm": "429",
+    "spora": "430",
+    "stampado": "431",
+    "starloader": "432",
+    "stillerx": "433",
+    "stonedrill": "434",
+    "suceful": "435",
+    "sunburst": "436",
+    "supernova": "437",
+    "synack": "438",
+    "systembc": "439",
+    "taintedscribe": "440",
+    "teardrop": "441",
+    "telecrypt": "442",
+    "terdot": "443",
+    "teslacrypt": "444",
+    "thanatos": "445",
+    "thanos": "446",
+    "tinba": "447",
+    "tinyloader": "448",
+    "tonedeaf": "449",
+    "trat": "450",
+    "treasurehunt": "451",
+    "trickbot": "452",
+    "trickster": "453",
+    "trik": "454",
+    "triton": "455",
+    "try2cry": "456",
+    "turnedup": "457",
+    "tvspy": "458",
+    "typeframe": "459",
+    "tyupkin": "460",
+    "upaskit": "461",
+    "urlzone": "462",
+    "ursnif": "463",
+    "usbculprit": "464",
+    "valak": "465",
+    "varenyky": "466",
+    "vawtrak": "467",
+    "vcrodat": "468",
+    "vega": "469",
+    "venuslocker": "470",
+    "vermin": "471",
+    "vhd": "472",
+    "vidar": "473",
+    "virdetdoor": "474",
+    "virlock": "475",
+    "vivaciousgift": "476",
+    "wali": "477",
+    "wannacry": "478",
+    "warzone": "479",
+    "wastedlocker": "480",
+    "wellmess": "481",
+    "winnti": "482",
+    "winpot": "483",
+    "xagent": "484",
+    "xdata": "485",
+    "xddown": "486",
+    "xmrig": "487",
+    "xpan": "488",
+    "xtunnel": "489",
+    "xxmm": "490",
+    "yatron": "491",
+    "yoddos": "492",
+    "zcrypt": "493",
+    "zebrocy": "494",
+    "zegost": "495",
+    "zeppelin": "496",
+    "zerot": "497",
+    "zeus": "498",
+    "zeuspanda": "499",
+    "zloader": "500",
+    "zyklon": "501"
+  },
+  "split_info": {
+    "train": {
+      "total": 2365,
+      "families": {
+        "shamoon": {
+          "count": 26,
+          "class_id": "409"
+        },
+        "downdelph": {
+          "count": 11,
+          "class_id": "123"
+        },
+        "discordiaminer": {
+          "count": 8,
+          "class_id": "118"
+        },
+        "ramnit": {
+          "count": 8,
+          "class_id": "358"
+        },
+        "felismus": {
+          "count": 2,
+          "class_id": "147"
+        },
+        "kingofhearts": {
+          "count": 1,
+          "class_id": "224"
+        },
+        "medusalocker": {
+          "count": 21,
+          "class_id": "256"
+        },
+        "peppyrat": {
+          "count": 23,
+          "class_id": "314"
+        },
+        "andromeda": {
+          "count": 16,
+          "class_id": "12"
+        },
+        "retriever": {
+          "count": 3,
+          "class_id": "378"
+        },
+        "skimer": {
+          "count": 10,
+          "class_id": "418"
+        },
+        "bazarbackdoor": {
+          "count": 20,
+          "class_id": "39"
+        },
+        "hussarini": {
+          "count": 1,
+          "class_id": "196"
+        },
+        "metamorfo": {
+          "count": 3,
+          "class_id": "259"
+        },
+        "nanolocker": {
+          "count": 7,
+          "class_id": "275"
+        },
+        "trickbot": {
+          "count": 34,
+          "class_id": "452"
+        },
+        "icedid": {
+          "count": 113,
+          "class_id": "198"
+        },
+        "cannon": {
+          "count": 10,
+          "class_id": "64"
+        },
+        "nazar": {
+          "count": 6,
+          "class_id": "277"
+        },
+        "dreambot": {
+          "count": 16,
+          "class_id": "124"
+        },
+        "ozone": {
+          "count": 1,
+          "class_id": "306"
+        },
+        "prometei": {
+          "count": 28,
+          "class_id": "344"
+        },
+        "guildma": {
+          "count": 1,
+          "class_id": "179"
+        },
+        "longwatch": {
+          "count": 1,
+          "class_id": "244"
+        },
+        "smokeloader": {
+          "count": 13,
+          "class_id": "422"
+        },
+        "xtunnel": {
+          "count": 10,
+          "class_id": "489"
+        },
+        "remexi": {
+          "count": 6,
+          "class_id": "375"
+        },
+        "pushdo": {
+          "count": 2,
+          "class_id": "347"
+        },
+        "athenago": {
+          "count": 2,
+          "class_id": "19"
+        },
+        "azorult": {
+          "count": 54,
+          "class_id": "31"
+        },
+        "samsa": {
+          "count": 15,
+          "class_id": "394"
+        },
+        "gandcrab": {
+          "count": 32,
+          "class_id": "162"
+        },
+        "rokrat": {
+          "count": 4,
+          "class_id": "386"
+        },
+        "roguerobin": {
+          "count": 9,
+          "class_id": "383"
+        },
+        "birddog": {
+          "count": 2,
+          "class_id": "48"
+        },
+        "ketrican": {
+          "count": 9,
+          "class_id": "218"
+        },
+        "tinba": {
+          "count": 2,
+          "class_id": "447"
+        },
+        "indigodrop": {
+          "count": 24,
+          "class_id": "202"
+        },
+        "crimson": {
+          "count": 12,
+          "class_id": "84"
+        },
+        "olympicdestroyer": {
+          "count": 20,
+          "class_id": "301"
+        },
+        "baldr": {
+          "count": 3,
+          "class_id": "35"
+        },
+        "zyklon": {
+          "count": 1,
+          "class_id": "501"
+        },
+        "zeuspanda": {
+          "count": 4,
+          "class_id": "499"
+        },
+        "darkcrystal": {
+          "count": 1,
+          "class_id": "105"
+        },
+        "pony": {
+          "count": 7,
+          "class_id": "335"
+        },
+        "poisonplug": {
+          "count": 10,
+          "class_id": "331"
+        },
+        "deloader": {
+          "count": 5,
+          "class_id": "113"
+        },
+        "padcrypt": {
+          "count": 5,
+          "class_id": "307"
+        },
+        "hyperbro": {
+          "count": 1,
+          "class_id": "197"
+        },
+        "crackshot": {
+          "count": 1,
+          "class_id": "82"
+        },
+        "systembc": {
+          "count": 4,
+          "class_id": "439"
+        },
+        "powerspritz": {
+          "count": 2,
+          "class_id": "338"
+        },
+        "locky": {
+          "count": 32,
+          "class_id": "239"
+        },
+        "zerot": {
+          "count": 16,
+          "class_id": "497"
+        },
+        "avzhan": {
+          "count": 2,
+          "class_id": "30"
+        },
+        "ursnif": {
+          "count": 16,
+          "class_id": "463"
+        },
+        "jimmy": {
+          "count": 10,
+          "class_id": "211"
+        },
+        "kovter": {
+          "count": 3,
+          "class_id": "227"
+        },
+        "wannacry": {
+          "count": 20,
+          "class_id": "478"
+        },
+        "hotcroissant": {
+          "count": 1,
+          "class_id": "193"
+        },
+        "psixbot": {
+          "count": 1,
+          "class_id": "346"
+        },
+        "maze": {
+          "count": 41,
+          "class_id": "255"
+        },
+        "crat": {
+          "count": 20,
+          "class_id": "83"
+        },
+        "navrat": {
+          "count": 1,
+          "class_id": "276"
+        },
+        "atmspitter": {
+          "count": 5,
+          "class_id": "24"
+        },
+        "gazer": {
+          "count": 1,
+          "class_id": "164"
+        },
+        "upaskit": {
+          "count": 1,
+          "class_id": "461"
+        },
+        "quasar": {
+          "count": 14,
+          "class_id": "351"
+        },
+        "treasurehunt": {
+          "count": 8,
+          "class_id": "451"
+        },
+        "bandook": {
+          "count": 10,
+          "class_id": "37"
+        },
+        "seduploader": {
+          "count": 32,
+          "class_id": "403"
+        },
+        "tinyloader": {
+          "count": 4,
+          "class_id": "448"
+        },
+        "kasidet": {
+          "count": 4,
+          "class_id": "215"
+        },
+        "turnedup": {
+          "count": 23,
+          "class_id": "457"
+        },
+        "pinchduke": {
+          "count": 1,
+          "class_id": "322"
+        },
+        "neurevt": {
+          "count": 1,
+          "class_id": "283"
+        },
+        "datper": {
+          "count": 7,
+          "class_id": "109"
+        },
+        "plead": {
+          "count": 5,
+          "class_id": "326"
+        },
+        "flawedammyy": {
+          "count": 15,
+          "class_id": "151"
+        },
+        "copperhedge": {
+          "count": 17,
+          "class_id": "79"
+        },
+        "winpot": {
+          "count": 10,
+          "class_id": "483"
+        },
+        "netwire": {
+          "count": 8,
+          "class_id": "282"
+        },
+        "redaman": {
+          "count": 32,
+          "class_id": "371"
+        },
+        "warzone": {
+          "count": 2,
+          "class_id": "479"
+        },
+        "mosaicregressor": {
+          "count": 21,
+          "class_id": "270"
+        },
+        "lowkey": {
+          "count": 4,
+          "class_id": "246"
+        },
+        "mokes": {
+          "count": 4,
+          "class_id": "267"
+        },
+        "skipper": {
+          "count": 1,
+          "class_id": "420"
+        },
+        "cryptoshuffler": {
+          "count": 12,
+          "class_id": "93"
+        },
+        "queenofhearts": {
+          "count": 3,
+          "class_id": "354"
+        },
+        "ryuk": {
+          "count": 22,
+          "class_id": "390"
+        },
+        "catchamas": {
+          "count": 5,
+          "class_id": "66"
+        },
+        "ransom32": {
+          "count": 1,
+          "class_id": "362"
+        },
+        "retefe": {
+          "count": 1,
+          "class_id": "377"
+        },
+        "crysis": {
+          "count": 2,
+          "class_id": "97"
+        },
+        "darkcomet": {
+          "count": 3,
+          "class_id": "104"
+        },
+        "zegost": {
+          "count": 25,
+          "class_id": "495"
+        },
+        "ratvermin": {
+          "count": 14,
+          "class_id": "368"
+        },
+        "kuik": {
+          "count": 1,
+          "class_id": "231"
+        },
+        "electricfish": {
+          "count": 1,
+          "class_id": "134"
+        },
+        "obliquerat": {
+          "count": 2,
+          "class_id": "298"
+        },
+        "fakecry": {
+          "count": 1,
+          "class_id": "142"
+        },
+        "sdbbot": {
+          "count": 2,
+          "class_id": "400"
+        },
+        "cryptxxx": {
+          "count": 9,
+          "class_id": "95"
+        },
+        "gh0strat": {
+          "count": 1,
+          "class_id": "168"
+        },
+        "njrat": {
+          "count": 11,
+          "class_id": "291"
+        },
+        "qbot": {
+          "count": 13,
+          "class_id": "349"
+        },
+        "stonedrill": {
+          "count": 3,
+          "class_id": "434"
+        },
+        "centerpos": {
+          "count": 7,
+          "class_id": "68"
+        },
+        "sigma": {
+          "count": 1,
+          "class_id": "414"
+        },
+        "try2cry": {
+          "count": 8,
+          "class_id": "456"
+        },
+        "raindrop": {
+          "count": 1,
+          "class_id": "357"
+        },
+        "phorpiex": {
+          "count": 46,
+          "class_id": "320"
+        },
+        "dridex": {
+          "count": 9,
+          "class_id": "125"
+        },
+        "egregor": {
+          "count": 29,
+          "class_id": "132"
+        },
+        "cobint": {
+          "count": 2,
+          "class_id": "76"
+        },
+        "nemty": {
+          "count": 2,
+          "class_id": "278"
+        },
+        "killdisk": {
+          "count": 5,
+          "class_id": "222"
+        },
+        "bazarloader": {
+          "count": 15,
+          "class_id": "40"
+        },
+        "wastedlocker": {
+          "count": 8,
+          "class_id": "480"
+        },
+        "evotob": {
+          "count": 7,
+          "class_id": "139"
+        },
+        "hakbit": {
+          "count": 1,
+          "class_id": "183"
+        },
+        "servhelper": {
+          "count": 2,
+          "class_id": "406"
+        },
+        "danabot": {
+          "count": 7,
+          "class_id": "103"
+        },
+        "rgdoor": {
+          "count": 1,
+          "class_id": "381"
+        },
+        "valak": {
+          "count": 20,
+          "class_id": "465"
+        },
+        "7ev3n": {
+          "count": 12,
+          "class_id": "0"
+        },
+        "mischa": {
+          "count": 1,
+          "class_id": "264"
+        },
+        "nanocore": {
+          "count": 10,
+          "class_id": "274"
+        },
+        "ovidiy": {
+          "count": 11,
+          "class_id": "305"
+        },
+        "xagent": {
+          "count": 15,
+          "class_id": "484"
+        },
+        "ligsterac": {
+          "count": 2,
+          "class_id": "236"
+        },
+        "plurox": {
+          "count": 5,
+          "class_id": "329"
+        },
+        "remtasu": {
+          "count": 1,
+          "class_id": "376"
+        },
+        "buffetline": {
+          "count": 1,
+          "class_id": "61"
+        },
+        "fallchill": {
+          "count": 12,
+          "class_id": "143"
+        },
+        "chinachopper": {
+          "count": 3,
+          "class_id": "71"
+        },
+        "spark": {
+          "count": 16,
+          "class_id": "428"
+        },
+        "nymaim": {
+          "count": 9,
+          "class_id": "297"
+        },
+        "attor": {
+          "count": 5,
+          "class_id": "27"
+        },
+        "reactorbot": {
+          "count": 5,
+          "class_id": "370"
+        },
+        "chinoxy": {
+          "count": 1,
+          "class_id": "72"
+        },
+        "virdetdoor": {
+          "count": 2,
+          "class_id": "474"
+        },
+        "rekaf": {
+          "count": 2,
+          "class_id": "373"
+        },
+        "varenyky": {
+          "count": 12,
+          "class_id": "466"
+        },
+        "gamefish": {
+          "count": 1,
+          "class_id": "161"
+        },
+        "sobaken": {
+          "count": 13,
+          "class_id": "424"
+        },
+        "samsam": {
+          "count": 4,
+          "class_id": "395"
+        },
+        "balkandoor": {
+          "count": 4,
+          "class_id": "36"
+        },
+        "princesslocker": {
+          "count": 1,
+          "class_id": "343"
+        },
+        "rarog": {
+          "count": 1,
+          "class_id": "366"
+        },
+        "fatduke": {
+          "count": 1,
+          "class_id": "146"
+        },
+        "atmripper": {
+          "count": 5,
+          "class_id": "23"
+        },
+        "gozi": {
+          "count": 12,
+          "class_id": "173"
+        },
+        "artradownloader": {
+          "count": 32,
+          "class_id": "16"
+        },
+        "sage": {
+          "count": 11,
+          "class_id": "391"
+        },
+        "ismagent": {
+          "count": 4,
+          "class_id": "205"
+        },
+        "zeppelin": {
+          "count": 1,
+          "class_id": "496"
+        },
+        "tyupkin": {
+          "count": 6,
+          "class_id": "460"
+        },
+        "lockergoga": {
+          "count": 4,
+          "class_id": "238"
+        },
+        "virlock": {
+          "count": 8,
+          "class_id": "475"
+        },
+        "formbook": {
+          "count": 4,
+          "class_id": "155"
+        },
+        "kronos": {
+          "count": 4,
+          "class_id": "230"
+        },
+        "milum": {
+          "count": 1,
+          "class_id": "262"
+        },
+        "petrwrap": {
+          "count": 1,
+          "class_id": "315"
+        },
+        "quasarrat": {
+          "count": 2,
+          "class_id": "352"
+        },
+        "ploutus": {
+          "count": 10,
+          "class_id": "327"
+        },
+        "carbanak": {
+          "count": 13,
+          "class_id": "65"
+        },
+        "xddown": {
+          "count": 6,
+          "class_id": "486"
+        },
+        "philadelphia": {
+          "count": 3,
+          "class_id": "318"
+        },
+        "magniber": {
+          "count": 4,
+          "class_id": "250"
+        },
+        "cspy": {
+          "count": 1,
+          "class_id": "98"
+        },
+        "alice": {
+          "count": 4,
+          "class_id": "7"
+        },
+        "astaroth": {
+          "count": 12,
+          "class_id": "17"
+        },
+        "seon": {
+          "count": 1,
+          "class_id": "404"
+        },
+        "neopocket": {
+          "count": 1,
+          "class_id": "279"
+        },
+        "cotxrat": {
+          "count": 4,
+          "class_id": "80"
+        },
+        "bluecore": {
+          "count": 2,
+          "class_id": "56"
+        },
+        "cerber": {
+          "count": 10,
+          "class_id": "69"
+        },
+        "trik": {
+          "count": 16,
+          "class_id": "454"
+        },
+        "stillerx": {
+          "count": 1,
+          "class_id": "433"
+        },
+        "konni": {
+          "count": 6,
+          "class_id": "225"
+        },
+        "ranscam": {
+          "count": 2,
+          "class_id": "360"
+        },
+        "agenttesla": {
+          "count": 7,
+          "class_id": "6"
+        },
+        "silentbruter": {
+          "count": 1,
+          "class_id": "415"
+        },
+        "redline": {
+          "count": 1,
+          "class_id": "372"
+        },
+        "bergard": {
+          "count": 5,
+          "class_id": "44"
+        },
+        "sodin": {
+          "count": 1,
+          "class_id": "425"
+        },
+        "badrabbit": {
+          "count": 2,
+          "class_id": "34"
+        },
+        "cannibalrat": {
+          "count": 3,
+          "class_id": "63"
+        },
+        "xmrig": {
+          "count": 8,
+          "class_id": "487"
+        },
+        "sharpstats": {
+          "count": 3,
+          "class_id": "412"
+        },
+        "adylkuzz": {
+          "count": 4,
+          "class_id": "5"
+        },
+        "greendispenser": {
+          "count": 4,
+          "class_id": "178"
+        },
+        "chtonic": {
+          "count": 1,
+          "class_id": "73"
+        },
+        "teslacrypt": {
+          "count": 4,
+          "class_id": "444"
+        },
+        "magala": {
+          "count": 9,
+          "class_id": "249"
+        },
+        "imminentmonitor": {
+          "count": 1,
+          "class_id": "201"
+        },
+        "marsjoke": {
+          "count": 1,
+          "class_id": "253"
+        },
+        "get2": {
+          "count": 3,
+          "class_id": "166"
+        },
+        "kingminer": {
+          "count": 1,
+          "class_id": "223"
+        },
+        "crimsonrat": {
+          "count": 1,
+          "class_id": "85"
+        },
+        "ratankbapos": {
+          "count": 1,
+          "class_id": "367"
+        },
+        "krakencryptor": {
+          "count": 5,
+          "class_id": "229"
+        },
+        "netflash": {
+          "count": 1,
+          "class_id": "280"
+        },
+        "mgbot": {
+          "count": 6,
+          "class_id": "260"
+        },
+        "badcall": {
+          "count": 2,
+          "class_id": "33"
+        },
+        "latentbot": {
+          "count": 8,
+          "class_id": "233"
+        },
+        "vidar": {
+          "count": 2,
+          "class_id": "473"
+        },
+        "radrat": {
+          "count": 2,
+          "class_id": "356"
+        },
+        "neutrinopos": {
+          "count": 12,
+          "class_id": "286"
+        },
+        "blind": {
+          "count": 2,
+          "class_id": "54"
+        },
+        "flawedgrace": {
+          "count": 3,
+          "class_id": "152"
+        },
+        "bezigate": {
+          "count": 4,
+          "class_id": "46"
+        },
+        "poohmilk": {
+          "count": 1,
+          "class_id": "336"
+        },
+        "lokibot": {
+          "count": 8,
+          "class_id": "243"
+        },
+        "flokibot": {
+          "count": 12,
+          "class_id": "154"
+        },
+        "hoplight": {
+          "count": 13,
+          "class_id": "192"
+        },
+        "taintedscribe": {
+          "count": 2,
+          "class_id": "440"
+        },
+        "imminent": {
+          "count": 1,
+          "class_id": "200"
+        },
+        "hermes": {
+          "count": 1,
+          "class_id": "190"
+        },
+        "blackmoon": {
+          "count": 3,
+          "class_id": "53"
+        },
+        "emotet": {
+          "count": 14,
+          "class_id": "136"
+        },
+        "predator": {
+          "count": 7,
+          "class_id": "341"
+        },
+        "zebrocy": {
+          "count": 7,
+          "class_id": "494"
+        },
+        "prilex": {
+          "count": 4,
+          "class_id": "342"
+        },
+        "remcos": {
+          "count": 9,
+          "class_id": "374"
+        },
+        "sagerunex": {
+          "count": 12,
+          "class_id": "392"
+        },
+        "guloader": {
+          "count": 2,
+          "class_id": "180"
+        },
+        "bioload": {
+          "count": 1,
+          "class_id": "47"
+        },
+        "portreuse": {
+          "count": 3,
+          "class_id": "337"
+        },
+        "cutlet": {
+          "count": 4,
+          "class_id": "99"
+        },
+        "nyetya": {
+          "count": 1,
+          "class_id": "296"
+        },
+        "wali": {
+          "count": 12,
+          "class_id": "477"
+        },
+        "kwampirs": {
+          "count": 2,
+          "class_id": "232"
+        },
+        "icerat": {
+          "count": 1,
+          "class_id": "199"
+        },
+        "loda": {
+          "count": 16,
+          "class_id": "240"
+        },
+        "queenofclubs": {
+          "count": 1,
+          "class_id": "353"
+        },
+        "goznym": {
+          "count": 8,
+          "class_id": "175"
+        },
+        "gootkit": {
+          "count": 3,
+          "class_id": "172"
+        },
+        "dharma": {
+          "count": 7,
+          "class_id": "116"
+        },
+        "hancitor": {
+          "count": 2,
+          "class_id": "184"
+        },
+        "sunburst": {
+          "count": 6,
+          "class_id": "436"
+        },
+        "leash": {
+          "count": 2,
+          "class_id": "234"
+        },
+        "plugx": {
+          "count": 4,
+          "class_id": "328"
+        },
+        "mrwhite": {
+          "count": 3,
+          "class_id": "272"
+        },
+        "artfulpie": {
+          "count": 1,
+          "class_id": "15"
+        },
+        "kbot": {
+          "count": 2,
+          "class_id": "216"
+        },
+        "usbculprit": {
+          "count": 4,
+          "class_id": "464"
+        },
+        "foudre": {
+          "count": 6,
+          "class_id": "157"
+        },
+        "sectoprat": {
+          "count": 2,
+          "class_id": "401"
+        },
+        "ransoc": {
+          "count": 1,
+          "class_id": "361"
+        },
+        "sedreco": {
+          "count": 5,
+          "class_id": "402"
+        },
+        "eccentricbandwagon": {
+          "count": 3,
+          "class_id": "131"
+        },
+        "spora": {
+          "count": 2,
+          "class_id": "430"
+        },
+        "dropbook": {
+          "count": 1,
+          "class_id": "128"
+        },
+        "osno": {
+          "count": 1,
+          "class_id": "304"
+        },
+        "korplug": {
+          "count": 1,
+          "class_id": "226"
+        },
+        "avatar": {
+          "count": 1,
+          "class_id": "28"
+        },
+        "xpan": {
+          "count": 1,
+          "class_id": "488"
+        },
+        "odinaff": {
+          "count": 1,
+          "class_id": "300"
+        },
+        "parallax": {
+          "count": 2,
+          "class_id": "309"
+        },
+        "darkvnc": {
+          "count": 3,
+          "class_id": "107"
+        },
+        "terdot": {
+          "count": 1,
+          "class_id": "443"
+        },
+        "clop": {
+          "count": 12,
+          "class_id": "75"
+        },
+        "anchordns": {
+          "count": 1,
+          "class_id": "11"
+        },
+        "teardrop": {
+          "count": 2,
+          "class_id": "441"
+        },
+        "betabot": {
+          "count": 1,
+          "class_id": "45"
+        },
+        "ramsay": {
+          "count": 3,
+          "class_id": "359"
+        },
+        "highnoon": {
+          "count": 4,
+          "class_id": "191"
+        },
+        "evilnest": {
+          "count": 1,
+          "class_id": "138"
+        },
+        "masslogger": {
+          "count": 4,
+          "class_id": "254"
+        },
+        "mamba": {
+          "count": 3,
+          "class_id": "252"
+        },
+        "maktub": {
+          "count": 1,
+          "class_id": "251"
+        },
+        "octopus": {
+          "count": 4,
+          "class_id": "299"
+        },
+        "poisonivy": {
+          "count": 3,
+          "class_id": "330"
+        },
+        "urlzone": {
+          "count": 4,
+          "class_id": "462"
+        },
+        "roilocker": {
+          "count": 1,
+          "class_id": "384"
+        },
+        "montysthree": {
+          "count": 1,
+          "class_id": "269"
+        },
+        "cryptbot": {
+          "count": 1,
+          "class_id": "91"
+        },
+        "pekraut": {
+          "count": 2,
+          "class_id": "313"
+        },
+        "neutrinobot": {
+          "count": 2,
+          "class_id": "285"
+        },
+        "vivaciousgift": {
+          "count": 4,
+          "class_id": "476"
+        },
+        "oopsie": {
+          "count": 4,
+          "class_id": "302"
+        },
+        "zloader": {
+          "count": 4,
+          "class_id": "500"
+        },
+        "fortunecrypt": {
+          "count": 2,
+          "class_id": "156"
+        },
+        "funnydream": {
+          "count": 1,
+          "class_id": "160"
+        },
+        "telecrypt": {
+          "count": 1,
+          "class_id": "442"
+        },
+        "shapeshift": {
+          "count": 1,
+          "class_id": "410"
+        },
+        "quantloader": {
+          "count": 1,
+          "class_id": "350"
+        },
+        "diamondfox": {
+          "count": 1,
+          "class_id": "117"
+        },
+        "blackenergy": {
+          "count": 1,
+          "class_id": "51"
+        },
+        "atmii": {
+          "count": 3,
+          "class_id": "20"
+        },
+        "winnti": {
+          "count": 1,
+          "class_id": "482"
+        },
+        "globeimposter": {
+          "count": 1,
+          "class_id": "170"
+        },
+        "shione": {
+          "count": 1,
+          "class_id": "413"
+        },
+        "dmalocker": {
+          "count": 4,
+          "class_id": "119"
+        },
+        "melcoz": {
+          "count": 1,
+          "class_id": "258"
+        },
+        "arkei": {
+          "count": 5,
+          "class_id": "14"
+        },
+        "dyre": {
+          "count": 2,
+          "class_id": "129"
+        },
+        "vermin": {
+          "count": 4,
+          "class_id": "471"
+        },
+        "emdivi": {
+          "count": 1,
+          "class_id": "135"
+        },
+        "lechiffre": {
+          "count": 1,
+          "class_id": "235"
+        },
+        "deprimon": {
+          "count": 1,
+          "class_id": "115"
+        },
+        "satana": {
+          "count": 1,
+          "class_id": "396"
+        },
+        "ekans": {
+          "count": 1,
+          "class_id": "133"
+        },
+        "cyst": {
+          "count": 1,
+          "class_id": "102"
+        },
+        "cryptowall": {
+          "count": 7,
+          "class_id": "94"
+        },
+        "pipemon": {
+          "count": 1,
+          "class_id": "324"
+        },
+        "starloader": {
+          "count": 1,
+          "class_id": "432"
+        },
+        "nibiru": {
+          "count": 1,
+          "class_id": "289"
+        },
+        "proteus": {
+          "count": 1,
+          "class_id": "345"
+        },
+        "pclocker": {
+          "count": 1,
+          "class_id": "311"
+        },
+        "finspy": {
+          "count": 1,
+          "class_id": "150"
+        },
+        "suceful": {
+          "count": 1,
+          "class_id": "435"
+        },
+        "lurk": {
+          "count": 3,
+          "class_id": "248"
+        },
+        "advisorsbot": {
+          "count": 2,
+          "class_id": "4"
+        },
+        "moker": {
+          "count": 3,
+          "class_id": "266"
+        },
+        "skimerwc": {
+          "count": 2,
+          "class_id": "419"
+        },
+        "driftpin": {
+          "count": 3,
+          "class_id": "126"
+        },
+        "gh0st": {
+          "count": 4,
+          "class_id": "167"
+        },
+        "mole": {
+          "count": 1,
+          "class_id": "268"
+        },
+        "rapidransomware": {
+          "count": 2,
+          "class_id": "365"
+        },
+        "wellmess": {
+          "count": 1,
+          "class_id": "481"
+        },
+        "tonedeaf": {
+          "count": 1,
+          "class_id": "449"
+        },
+        "dnspionage": {
+          "count": 3,
+          "class_id": "120"
+        },
+        "cowersnail": {
+          "count": 1,
+          "class_id": "81"
+        },
+        "lodarat": {
+          "count": 4,
+          "class_id": "241"
+        },
+        "comrat": {
+          "count": 3,
+          "class_id": "77"
+        },
+        "fareit": {
+          "count": 3,
+          "class_id": "144"
+        },
+        "asyncrat": {
+          "count": 1,
+          "class_id": "18"
+        },
+        "supernova": {
+          "count": 1,
+          "class_id": "437"
+        },
+        "jolob": {
+          "count": 1,
+          "class_id": "212"
+        },
+        "karkoff": {
+          "count": 3,
+          "class_id": "214"
+        },
+        "anchor": {
+          "count": 4,
+          "class_id": "10"
+        },
+        "godzilla": {
+          "count": 2,
+          "class_id": "171"
+        },
+        "anatova": {
+          "count": 1,
+          "class_id": "9"
+        },
+        "rokku": {
+          "count": 2,
+          "class_id": "385"
+        },
+        "jigsaw": {
+          "count": 1,
+          "class_id": "210"
+        },
+        "darktequila": {
+          "count": 1,
+          "class_id": "106"
+        },
+        "cryptfile2": {
+          "count": 1,
+          "class_id": "92"
+        },
+        "trat": {
+          "count": 1,
+          "class_id": "450"
+        },
+        "sharpstage": {
+          "count": 1,
+          "class_id": "411"
+        },
+        "babymetal": {
+          "count": 3,
+          "class_id": "32"
+        },
+        "itranslator": {
+          "count": 4,
+          "class_id": "207"
+        },
+        "sathurbot": {
+          "count": 3,
+          "class_id": "397"
+        },
+        "zcrypt": {
+          "count": 1,
+          "class_id": "493"
+        },
+        "fleercivet": {
+          "count": 3,
+          "class_id": "153"
+        },
+        "filensfer": {
+          "count": 1,
+          "class_id": "148"
+        },
+        "gravityrat": {
+          "count": 3,
+          "class_id": "177"
+        },
+        "atmitch": {
+          "count": 1,
+          "class_id": "21"
+        },
+        "bart": {
+          "count": 1,
+          "class_id": "38"
+        },
+        "rurktar": {
+          "count": 2,
+          "class_id": "389"
+        },
+        "vawtrak": {
+          "count": 2,
+          "class_id": "467"
+        },
+        "buer": {
+          "count": 5,
+          "class_id": "59"
+        },
+        "shakti": {
+          "count": 4,
+          "class_id": "408"
+        },
+        "smokebot": {
+          "count": 2,
+          "class_id": "421"
+        },
+        "hawkeye": {
+          "count": 3,
+          "class_id": "186"
+        },
+        "blindingcan": {
+          "count": 2,
+          "class_id": "55"
+        },
+        "powerstats": {
+          "count": 2,
+          "class_id": "339"
+        },
+        "triton": {
+          "count": 1,
+          "class_id": "455"
+        },
+        "freenki": {
+          "count": 1,
+          "class_id": "158"
+        },
+        "beerbot": {
+          "count": 1,
+          "class_id": "43"
+        },
+        "parasitehttp": {
+          "count": 1,
+          "class_id": "310"
+        },
+        "vhd": {
+          "count": 4,
+          "class_id": "472"
+        },
+        "hannotog": {
+          "count": 1,
+          "class_id": "185"
+        },
+        "pickpocket": {
+          "count": 1,
+          "class_id": "321"
+        },
+        "helloworld": {
+          "count": 2,
+          "class_id": "187"
+        },
+        "thanatos": {
+          "count": 2,
+          "class_id": "445"
+        },
+        "synack": {
+          "count": 1,
+          "class_id": "438"
+        },
+        "pirpi": {
+          "count": 1,
+          "class_id": "325"
+        },
+        "keymarble": {
+          "count": 1,
+          "class_id": "219"
+        },
+        "luminositylink": {
+          "count": 1,
+          "class_id": "247"
+        },
+        "notpetya": {
+          "count": 1,
+          "class_id": "295"
+        },
+        "reveton": {
+          "count": 1,
+          "class_id": "379"
+        },
+        "evrial": {
+          "count": 1,
+          "class_id": "140"
+        },
+        "kghspy": {
+          "count": 4,
+          "class_id": "221"
+        },
+        "glitchpos": {
+          "count": 1,
+          "class_id": "169"
+        },
+        "daserf": {
+          "count": 1,
+          "class_id": "108"
+        },
+        "typeframe": {
+          "count": 5,
+          "class_id": "459"
+        },
+        "petya": {
+          "count": 2,
+          "class_id": "316"
+        },
+        "ceidpagelock": {
+          "count": 1,
+          "class_id": "67"
+        },
+        "vcrodat": {
+          "count": 1,
+          "class_id": "468"
+        },
+        "atmosphere": {
+          "count": 4,
+          "class_id": "22"
+        },
+        "blacklambert": {
+          "count": 1,
+          "class_id": "52"
+        },
+        "dripion": {
+          "count": 1,
+          "class_id": "127"
+        },
+        "powgoop": {
+          "count": 1,
+          "class_id": "340"
+        },
+        "isfb": {
+          "count": 3,
+          "class_id": "204"
+        },
+        "herbst": {
+          "count": 1,
+          "class_id": "188"
+        },
+        "kpot": {
+          "count": 1,
+          "class_id": "228"
+        },
+        "isminjector": {
+          "count": 1,
+          "class_id": "206"
+        },
+        "jhonerat": {
+          "count": 1,
+          "class_id": "209"
+        },
+        "piolin": {
+          "count": 1,
+          "class_id": "323"
+        },
+        "atmwizx": {
+          "count": 1,
+          "class_id": "26"
+        },
+        "pandabanker": {
+          "count": 4,
+          "class_id": "308"
+        },
+        "cinarat": {
+          "count": 1,
+          "class_id": "74"
+        },
+        "lojax": {
+          "count": 1,
+          "class_id": "242"
+        },
+        "bistromath": {
+          "count": 1,
+          "class_id": "50"
+        },
+        "rockloader": {
+          "count": 3,
+          "class_id": "382"
+        },
+        "crypt38": {
+          "count": 1,
+          "class_id": "89"
+        },
+        "nitol": {
+          "count": 1,
+          "class_id": "290"
+        },
+        "venuslocker": {
+          "count": 1,
+          "class_id": "470"
+        },
+        "crypy": {
+          "count": 1,
+          "class_id": "96"
+        },
+        "acidbox": {
+          "count": 2,
+          "class_id": "2"
+        },
+        "crutch": {
+          "count": 1,
+          "class_id": "87"
+        },
+        "deathransom": {
+          "count": 2,
+          "class_id": "111"
+        },
+        "zeus": {
+          "count": 1,
+          "class_id": "498"
+        },
+        "hadeslocker": {
+          "count": 1,
+          "class_id": "182"
+        },
+        "yoddos": {
+          "count": 1,
+          "class_id": "492"
+        },
+        "keypass": {
+          "count": 1,
+          "class_id": "220"
+        },
+        "goziisfb": {
+          "count": 1,
+          "class_id": "174"
+        },
+        "sorefang": {
+          "count": 2,
+          "class_id": "427"
+        },
+        "dealply": {
+          "count": 1,
+          "class_id": "110"
+        },
+        "yatron": {
+          "count": 1,
+          "class_id": "491"
+        },
+        "cyperine": {
+          "count": 1,
+          "class_id": "100"
+        },
+        "shadowpad": {
+          "count": 1,
+          "class_id": "407"
+        },
+        "mmlocker": {
+          "count": 1,
+          "class_id": "265"
+        },
+        "raccoonstealer": {
+          "count": 1,
+          "class_id": "355"
+        },
+        "newcore": {
+          "count": 1,
+          "class_id": "287"
+        },
+        "lockcrypt": {
+          "count": 1,
+          "class_id": "237"
+        },
+        "garrantydecrypt": {
+          "count": 1,
+          "class_id": "163"
+        },
+        "sodinokibi": {
+          "count": 1,
+          "class_id": "426"
+        },
+        "scarabey": {
+          "count": 1,
+          "class_id": "399"
+        },
+        "hupigon": {
+          "count": 1,
+          "class_id": "195"
+        },
+        "silentnight": {
+          "count": 1,
+          "class_id": "416"
+        },
+        "sepulcher": {
+          "count": 1,
+          "class_id": "405"
+        },
+        "loocipher": {
+          "count": 1,
+          "class_id": "245"
+        },
+        "buran": {
+          "count": 1,
+          "class_id": "62"
+        },
+        "fastcash": {
+          "count": 1,
+          "class_id": "145"
+        },
+        "nonransomware": {
+          "count": 1,
+          "class_id": "293"
+        },
+        "htran": {
+          "count": 1,
+          "class_id": "194"
+        },
+        "eris": {
+          "count": 1,
+          "class_id": "137"
+        },
+        "boostwrite": {
+          "count": 1,
+          "class_id": "57"
+        },
+        "finfisher": {
+          "count": 1,
+          "class_id": "149"
+        },
+        "pokemongo": {
+          "count": 1,
+          "class_id": "332"
+        },
+        "jaff": {
+          "count": 1,
+          "class_id": "208"
+        },
+        "contopee": {
+          "count": 1,
+          "class_id": "78"
+        },
+        "nextmanhistory": {
+          "count": 1,
+          "class_id": "288"
+        },
+        "adchiate": {
+          "count": 1,
+          "class_id": "3"
+        },
+        "intelrapid": {
+          "count": 1,
+          "class_id": "203"
+        },
+        "ruckguv": {
+          "count": 1,
+          "class_id": "388"
+        },
+        "snatch": {
+          "count": 1,
+          "class_id": "423"
+        },
+        "amadey": {
+          "count": 1,
+          "class_id": "8"
+        },
+        "dorshel": {
+          "count": 1,
+          "class_id": "121"
+        },
+        "delphstats": {
+          "count": 3,
+          "class_id": "114"
+        },
+        "mekotio": {
+          "count": 1,
+          "class_id": "257"
+        },
+        "revil": {
+          "count": 1,
+          "class_id": "380"
+        },
+        "nocturnal": {
+          "count": 1,
+          "class_id": "292"
+        },
+        "jumpall": {
+          "count": 1,
+          "class_id": "213"
+        },
+        "crypt0l0cker": {
+          "count": 1,
+          "class_id": "88"
+        },
+        "sality": {
+          "count": 1,
+          "class_id": "393"
+        },
+        "phobos": {
+          "count": 1,
+          "class_id": "319"
+        },
+        "notestuk": {
+          "count": 1,
+          "class_id": "294"
+        },
+        "neutrino": {
+          "count": 1,
+          "class_id": "284"
+        },
+        "phantomnet": {
+          "count": 1,
+          "class_id": "317"
+        },
+        "crypt888": {
+          "count": 1,
+          "class_id": "90"
+        },
+        "netsupport": {
+          "count": 1,
+          "class_id": "281"
+        },
+        "xdata": {
+          "count": 1,
+          "class_id": "485"
+        },
+        "polyglot": {
+          "count": 1,
+          "class_id": "333"
+        },
+        "miniduke": {
+          "count": 1,
+          "class_id": "263"
+        },
+        "andromut": {
+          "count": 1,
+          "class_id": "13"
+        },
+        "pykbot": {
+          "count": 1,
+          "class_id": "348"
+        },
+        "h1n1loader": {
+          "count": 1,
+          "class_id": "181"
+        },
+        "polyglotduke": {
+          "count": 1,
+          "class_id": "334"
+        },
+        "splm": {
+          "count": 1,
+          "class_id": "429"
+        },
+        "mikroceen": {
+          "count": 1,
+          "class_id": "261"
+        },
+        "buerak": {
+          "count": 1,
+          "class_id": "60"
+        },
+        "rapid": {
+          "count": 1,
+          "class_id": "364"
+        },
+        "dot": {
+          "count": 1,
+          "class_id": "122"
+        },
+        "defray": {
+          "count": 1,
+          "class_id": "112"
+        },
+        "pebbledash": {
+          "count": 1,
+          "class_id": "312"
+        },
+        "tvspy": {
+          "count": 1,
+          "class_id": "458"
+        },
+        "beendoor": {
+          "count": 1,
+          "class_id": "42"
+        },
+        "cyrat": {
+          "count": 1,
+          "class_id": "101"
+        },
+        "grabbot": {
+          "count": 1,
+          "class_id": "176"
+        },
+        "bedep": {
+          "count": 1,
+          "class_id": "41"
+        },
+        "biskvit": {
+          "count": 1,
+          "class_id": "49"
+        },
+        "fsociety": {
+          "count": 1,
+          "class_id": "159"
+        },
+        "atmtest": {
+          "count": 1,
+          "class_id": "25"
+        },
+        "stampado": {
+          "count": 1,
+          "class_id": "431"
+        },
+        "simplecred": {
+          "count": 1,
+          "class_id": "417"
+        },
+        "kegtap": {
+          "count": 1,
+          "class_id": "217"
+        },
+        "thanos": {
+          "count": 1,
+          "class_id": "446"
+        },
+        "heriplor": {
+          "count": 1,
+          "class_id": "189"
+        },
+        "expetr": {
+          "count": 1,
+          "class_id": "141"
+        },
+        "abaddonpos": {
+          "count": 1,
+          "class_id": "1"
+        },
+        "avemaria": {
+          "count": 1,
+          "class_id": "29"
+        },
+        "scarab": {
+          "count": 1,
+          "class_id": "398"
+        },
+        "osiris": {
+          "count": 1,
+          "class_id": "303"
+        },
+        "dyzap": {
+          "count": 1,
+          "class_id": "130"
+        },
+        "mpkbot": {
+          "count": 1,
+          "class_id": "271"
+        },
+        "chessylite": {
+          "count": 1,
+          "class_id": "70"
+        },
+        "rozena": {
+          "count": 1,
+          "class_id": "387"
+        },
+        "brlock": {
+          "count": 1,
+          "class_id": "58"
+        },
+        "trickster": {
+          "count": 1,
+          "class_id": "453"
+        },
+        "crowdedflounder": {
+          "count": 1,
+          "class_id": "86"
+        },
+        "xxmm": {
+          "count": 1,
+          "class_id": "490"
+        },
+        "vega": {
+          "count": 1,
+          "class_id": "469"
+        },
+        "gearshift": {
+          "count": 1,
+          "class_id": "165"
+        },
+        "multigrain": {
+          "count": 1,
+          "class_id": "273"
+        },
+        "rc2fm": {
+          "count": 1,
+          "class_id": "369"
+        },
+        "ransomexx": {
+          "count": 1,
+          "class_id": "363"
+        }
+      }
+    },
+    "test": {
+      "total": 730,
+      "families": {
+        "shamoon": {
+          "count": 7,
+          "class_id": "409"
+        },
+        "downdelph": {
+          "count": 3,
+          "class_id": "123"
+        },
+        "discordiaminer": {
+          "count": 2,
+          "class_id": "118"
+        },
+        "ramnit": {
+          "count": 2,
+          "class_id": "358"
+        },
+        "felismus": {
+          "count": 1,
+          "class_id": "147"
+        },
+        "kingofhearts": {
+          "count": 1,
+          "class_id": "224"
+        },
+        "medusalocker": {
+          "count": 6,
+          "class_id": "256"
+        },
+        "peppyrat": {
+          "count": 6,
+          "class_id": "314"
+        },
+        "andromeda": {
+          "count": 5,
+          "class_id": "12"
+        },
+        "retriever": {
+          "count": 1,
+          "class_id": "378"
+        },
+        "skimer": {
+          "count": 3,
+          "class_id": "418"
+        },
+        "bazarbackdoor": {
+          "count": 5,
+          "class_id": "39"
+        },
+        "hussarini": {
+          "count": 0,
+          "class_id": "196"
+        },
+        "metamorfo": {
+          "count": 1,
+          "class_id": "259"
+        },
+        "nanolocker": {
+          "count": 2,
+          "class_id": "275"
+        },
+        "trickbot": {
+          "count": 9,
+          "class_id": "452"
+        },
+        "icedid": {
+          "count": 29,
+          "class_id": "198"
+        },
+        "cannon": {
+          "count": 3,
+          "class_id": "64"
+        },
+        "nazar": {
+          "count": 2,
+          "class_id": "277"
+        },
+        "dreambot": {
+          "count": 5,
+          "class_id": "124"
+        },
+        "ozone": {
+          "count": 0,
+          "class_id": "306"
+        },
+        "prometei": {
+          "count": 7,
+          "class_id": "344"
+        },
+        "guildma": {
+          "count": 1,
+          "class_id": "179"
+        },
+        "longwatch": {
+          "count": 0,
+          "class_id": "244"
+        },
+        "smokeloader": {
+          "count": 4,
+          "class_id": "422"
+        },
+        "xtunnel": {
+          "count": 3,
+          "class_id": "489"
+        },
+        "remexi": {
+          "count": 2,
+          "class_id": "375"
+        },
+        "pushdo": {
+          "count": 1,
+          "class_id": "347"
+        },
+        "athenago": {
+          "count": 1,
+          "class_id": "19"
+        },
+        "azorult": {
+          "count": 14,
+          "class_id": "31"
+        },
+        "samsa": {
+          "count": 4,
+          "class_id": "394"
+        },
+        "gandcrab": {
+          "count": 9,
+          "class_id": "162"
+        },
+        "rokrat": {
+          "count": 1,
+          "class_id": "386"
+        },
+        "roguerobin": {
+          "count": 3,
+          "class_id": "383"
+        },
+        "birddog": {
+          "count": 1,
+          "class_id": "48"
+        },
+        "ketrican": {
+          "count": 3,
+          "class_id": "218"
+        },
+        "tinba": {
+          "count": 1,
+          "class_id": "447"
+        },
+        "indigodrop": {
+          "count": 7,
+          "class_id": "202"
+        },
+        "crimson": {
+          "count": 3,
+          "class_id": "84"
+        },
+        "olympicdestroyer": {
+          "count": 5,
+          "class_id": "301"
+        },
+        "baldr": {
+          "count": 1,
+          "class_id": "35"
+        },
+        "zyklon": {
+          "count": 0,
+          "class_id": "501"
+        },
+        "zeuspanda": {
+          "count": 2,
+          "class_id": "499"
+        },
+        "darkcrystal": {
+          "count": 1,
+          "class_id": "105"
+        },
+        "pony": {
+          "count": 2,
+          "class_id": "335"
+        },
+        "poisonplug": {
+          "count": 3,
+          "class_id": "331"
+        },
+        "deloader": {
+          "count": 2,
+          "class_id": "113"
+        },
+        "padcrypt": {
+          "count": 2,
+          "class_id": "307"
+        },
+        "hyperbro": {
+          "count": 0,
+          "class_id": "197"
+        },
+        "crackshot": {
+          "count": 0,
+          "class_id": "82"
+        },
+        "systembc": {
+          "count": 1,
+          "class_id": "439"
+        },
+        "powerspritz": {
+          "count": 1,
+          "class_id": "338"
+        },
+        "locky": {
+          "count": 9,
+          "class_id": "239"
+        },
+        "zerot": {
+          "count": 4,
+          "class_id": "497"
+        },
+        "avzhan": {
+          "count": 1,
+          "class_id": "30"
+        },
+        "ursnif": {
+          "count": 5,
+          "class_id": "463"
+        },
+        "jimmy": {
+          "count": 3,
+          "class_id": "211"
+        },
+        "kovter": {
+          "count": 1,
+          "class_id": "227"
+        },
+        "wannacry": {
+          "count": 5,
+          "class_id": "478"
+        },
+        "hotcroissant": {
+          "count": 0,
+          "class_id": "193"
+        },
+        "psixbot": {
+          "count": 1,
+          "class_id": "346"
+        },
+        "maze": {
+          "count": 11,
+          "class_id": "255"
+        },
+        "crat": {
+          "count": 6,
+          "class_id": "83"
+        },
+        "navrat": {
+          "count": 1,
+          "class_id": "276"
+        },
+        "atmspitter": {
+          "count": 2,
+          "class_id": "24"
+        },
+        "gazer": {
+          "count": 1,
+          "class_id": "164"
+        },
+        "upaskit": {
+          "count": 0,
+          "class_id": "461"
+        },
+        "quasar": {
+          "count": 4,
+          "class_id": "351"
+        },
+        "treasurehunt": {
+          "count": 2,
+          "class_id": "451"
+        },
+        "bandook": {
+          "count": 3,
+          "class_id": "37"
+        },
+        "seduploader": {
+          "count": 8,
+          "class_id": "403"
+        },
+        "tinyloader": {
+          "count": 1,
+          "class_id": "448"
+        },
+        "kasidet": {
+          "count": 1,
+          "class_id": "215"
+        },
+        "turnedup": {
+          "count": 6,
+          "class_id": "457"
+        },
+        "pinchduke": {
+          "count": 0,
+          "class_id": "322"
+        },
+        "neurevt": {
+          "count": 0,
+          "class_id": "283"
+        },
+        "datper": {
+          "count": 2,
+          "class_id": "109"
+        },
+        "plead": {
+          "count": 2,
+          "class_id": "326"
+        },
+        "flawedammyy": {
+          "count": 4,
+          "class_id": "151"
+        },
+        "copperhedge": {
+          "count": 5,
+          "class_id": "79"
+        },
+        "winpot": {
+          "count": 3,
+          "class_id": "483"
+        },
+        "netwire": {
+          "count": 2,
+          "class_id": "282"
+        },
+        "redaman": {
+          "count": 8,
+          "class_id": "371"
+        },
+        "warzone": {
+          "count": 1,
+          "class_id": "479"
+        },
+        "mosaicregressor": {
+          "count": 6,
+          "class_id": "270"
+        },
+        "lowkey": {
+          "count": 2,
+          "class_id": "246"
+        },
+        "mokes": {
+          "count": 1,
+          "class_id": "267"
+        },
+        "skipper": {
+          "count": 0,
+          "class_id": "420"
+        },
+        "cryptoshuffler": {
+          "count": 3,
+          "class_id": "93"
+        },
+        "queenofhearts": {
+          "count": 1,
+          "class_id": "354"
+        },
+        "ryuk": {
+          "count": 6,
+          "class_id": "390"
+        },
+        "catchamas": {
+          "count": 2,
+          "class_id": "66"
+        },
+        "ransom32": {
+          "count": 0,
+          "class_id": "362"
+        },
+        "retefe": {
+          "count": 0,
+          "class_id": "377"
+        },
+        "crysis": {
+          "count": 1,
+          "class_id": "97"
+        },
+        "darkcomet": {
+          "count": 1,
+          "class_id": "104"
+        },
+        "zegost": {
+          "count": 7,
+          "class_id": "495"
+        },
+        "ratvermin": {
+          "count": 4,
+          "class_id": "368"
+        },
+        "kuik": {
+          "count": 1,
+          "class_id": "231"
+        },
+        "electricfish": {
+          "count": 1,
+          "class_id": "134"
+        },
+        "obliquerat": {
+          "count": 1,
+          "class_id": "298"
+        },
+        "fakecry": {
+          "count": 1,
+          "class_id": "142"
+        },
+        "sdbbot": {
+          "count": 1,
+          "class_id": "400"
+        },
+        "cryptxxx": {
+          "count": 3,
+          "class_id": "95"
+        },
+        "gh0strat": {
+          "count": 0,
+          "class_id": "168"
+        },
+        "njrat": {
+          "count": 3,
+          "class_id": "291"
+        },
+        "qbot": {
+          "count": 4,
+          "class_id": "349"
+        },
+        "stonedrill": {
+          "count": 1,
+          "class_id": "434"
+        },
+        "centerpos": {
+          "count": 2,
+          "class_id": "68"
+        },
+        "sigma": {
+          "count": 0,
+          "class_id": "414"
+        },
+        "try2cry": {
+          "count": 2,
+          "class_id": "456"
+        },
+        "raindrop": {
+          "count": 0,
+          "class_id": "357"
+        },
+        "phorpiex": {
+          "count": 12,
+          "class_id": "320"
+        },
+        "dridex": {
+          "count": 3,
+          "class_id": "125"
+        },
+        "egregor": {
+          "count": 8,
+          "class_id": "132"
+        },
+        "cobint": {
+          "count": 1,
+          "class_id": "76"
+        },
+        "nemty": {
+          "count": 1,
+          "class_id": "278"
+        },
+        "killdisk": {
+          "count": 2,
+          "class_id": "222"
+        },
+        "bazarloader": {
+          "count": 4,
+          "class_id": "40"
+        },
+        "wastedlocker": {
+          "count": 2,
+          "class_id": "480"
+        },
+        "evotob": {
+          "count": 2,
+          "class_id": "139"
+        },
+        "hakbit": {
+          "count": 0,
+          "class_id": "183"
+        },
+        "servhelper": {
+          "count": 1,
+          "class_id": "406"
+        },
+        "danabot": {
+          "count": 2,
+          "class_id": "103"
+        },
+        "rgdoor": {
+          "count": 1,
+          "class_id": "381"
+        },
+        "valak": {
+          "count": 6,
+          "class_id": "465"
+        },
+        "7ev3n": {
+          "count": 3,
+          "class_id": "0"
+        },
+        "mischa": {
+          "count": 1,
+          "class_id": "264"
+        },
+        "nanocore": {
+          "count": 3,
+          "class_id": "274"
+        },
+        "ovidiy": {
+          "count": 3,
+          "class_id": "305"
+        },
+        "xagent": {
+          "count": 4,
+          "class_id": "484"
+        },
+        "ligsterac": {
+          "count": 1,
+          "class_id": "236"
+        },
+        "plurox": {
+          "count": 2,
+          "class_id": "329"
+        },
+        "remtasu": {
+          "count": 0,
+          "class_id": "376"
+        },
+        "buffetline": {
+          "count": 0,
+          "class_id": "61"
+        },
+        "fallchill": {
+          "count": 3,
+          "class_id": "143"
+        },
+        "chinachopper": {
+          "count": 1,
+          "class_id": "71"
+        },
+        "spark": {
+          "count": 4,
+          "class_id": "428"
+        },
+        "nymaim": {
+          "count": 3,
+          "class_id": "297"
+        },
+        "attor": {
+          "count": 2,
+          "class_id": "27"
+        },
+        "reactorbot": {
+          "count": 2,
+          "class_id": "370"
+        },
+        "chinoxy": {
+          "count": 0,
+          "class_id": "72"
+        },
+        "virdetdoor": {
+          "count": 1,
+          "class_id": "474"
+        },
+        "rekaf": {
+          "count": 1,
+          "class_id": "373"
+        },
+        "varenyky": {
+          "count": 4,
+          "class_id": "466"
+        },
+        "gamefish": {
+          "count": 0,
+          "class_id": "161"
+        },
+        "sobaken": {
+          "count": 4,
+          "class_id": "424"
+        },
+        "samsam": {
+          "count": 1,
+          "class_id": "395"
+        },
+        "balkandoor": {
+          "count": 2,
+          "class_id": "36"
+        },
+        "princesslocker": {
+          "count": 1,
+          "class_id": "343"
+        },
+        "rarog": {
+          "count": 0,
+          "class_id": "366"
+        },
+        "fatduke": {
+          "count": 1,
+          "class_id": "146"
+        },
+        "atmripper": {
+          "count": 2,
+          "class_id": "23"
+        },
+        "gozi": {
+          "count": 3,
+          "class_id": "173"
+        },
+        "artradownloader": {
+          "count": 8,
+          "class_id": "16"
+        },
+        "sage": {
+          "count": 3,
+          "class_id": "391"
+        },
+        "ismagent": {
+          "count": 2,
+          "class_id": "205"
+        },
+        "zeppelin": {
+          "count": 0,
+          "class_id": "496"
+        },
+        "tyupkin": {
+          "count": 2,
+          "class_id": "460"
+        },
+        "lockergoga": {
+          "count": 2,
+          "class_id": "238"
+        },
+        "virlock": {
+          "count": 2,
+          "class_id": "475"
+        },
+        "formbook": {
+          "count": 2,
+          "class_id": "155"
+        },
+        "kronos": {
+          "count": 2,
+          "class_id": "230"
+        },
+        "milum": {
+          "count": 1,
+          "class_id": "262"
+        },
+        "petrwrap": {
+          "count": 0,
+          "class_id": "315"
+        },
+        "quasarrat": {
+          "count": 1,
+          "class_id": "352"
+        },
+        "ploutus": {
+          "count": 3,
+          "class_id": "327"
+        },
+        "carbanak": {
+          "count": 4,
+          "class_id": "65"
+        },
+        "xddown": {
+          "count": 2,
+          "class_id": "486"
+        },
+        "philadelphia": {
+          "count": 1,
+          "class_id": "318"
+        },
+        "magniber": {
+          "count": 1,
+          "class_id": "250"
+        },
+        "cspy": {
+          "count": 1,
+          "class_id": "98"
+        },
+        "alice": {
+          "count": 1,
+          "class_id": "7"
+        },
+        "astaroth": {
+          "count": 3,
+          "class_id": "17"
+        },
+        "seon": {
+          "count": 1,
+          "class_id": "404"
+        },
+        "neopocket": {
+          "count": 0,
+          "class_id": "279"
+        },
+        "cotxrat": {
+          "count": 1,
+          "class_id": "80"
+        },
+        "bluecore": {
+          "count": 1,
+          "class_id": "56"
+        },
+        "cerber": {
+          "count": 3,
+          "class_id": "69"
+        },
+        "trik": {
+          "count": 4,
+          "class_id": "454"
+        },
+        "stillerx": {
+          "count": 1,
+          "class_id": "433"
+        },
+        "konni": {
+          "count": 2,
+          "class_id": "225"
+        },
+        "ranscam": {
+          "count": 1,
+          "class_id": "360"
+        },
+        "agenttesla": {
+          "count": 2,
+          "class_id": "6"
+        },
+        "silentbruter": {
+          "count": 1,
+          "class_id": "415"
+        },
+        "redline": {
+          "count": 1,
+          "class_id": "372"
+        },
+        "bergard": {
+          "count": 2,
+          "class_id": "44"
+        },
+        "sodin": {
+          "count": 1,
+          "class_id": "425"
+        },
+        "badrabbit": {
+          "count": 1,
+          "class_id": "34"
+        },
+        "cannibalrat": {
+          "count": 1,
+          "class_id": "63"
+        },
+        "xmrig": {
+          "count": 3,
+          "class_id": "487"
+        },
+        "sharpstats": {
+          "count": 1,
+          "class_id": "412"
+        },
+        "adylkuzz": {
+          "count": 1,
+          "class_id": "5"
+        },
+        "greendispenser": {
+          "count": 2,
+          "class_id": "178"
+        },
+        "chtonic": {
+          "count": 0,
+          "class_id": "73"
+        },
+        "teslacrypt": {
+          "count": 1,
+          "class_id": "444"
+        },
+        "magala": {
+          "count": 3,
+          "class_id": "249"
+        },
+        "imminentmonitor": {
+          "count": 0,
+          "class_id": "201"
+        },
+        "marsjoke": {
+          "count": 0,
+          "class_id": "253"
+        },
+        "get2": {
+          "count": 1,
+          "class_id": "166"
+        },
+        "kingminer": {
+          "count": 1,
+          "class_id": "223"
+        },
+        "crimsonrat": {
+          "count": 1,
+          "class_id": "85"
+        },
+        "ratankbapos": {
+          "count": 1,
+          "class_id": "367"
+        },
+        "krakencryptor": {
+          "count": 2,
+          "class_id": "229"
+        },
+        "netflash": {
+          "count": 1,
+          "class_id": "280"
+        },
+        "mgbot": {
+          "count": 2,
+          "class_id": "260"
+        },
+        "badcall": {
+          "count": 1,
+          "class_id": "33"
+        },
+        "latentbot": {
+          "count": 2,
+          "class_id": "233"
+        },
+        "vidar": {
+          "count": 1,
+          "class_id": "473"
+        },
+        "radrat": {
+          "count": 1,
+          "class_id": "356"
+        },
+        "neutrinopos": {
+          "count": 4,
+          "class_id": "286"
+        },
+        "blind": {
+          "count": 1,
+          "class_id": "54"
+        },
+        "flawedgrace": {
+          "count": 1,
+          "class_id": "152"
+        },
+        "bezigate": {
+          "count": 1,
+          "class_id": "46"
+        },
+        "poohmilk": {
+          "count": 0,
+          "class_id": "336"
+        },
+        "lokibot": {
+          "count": 2,
+          "class_id": "243"
+        },
+        "flokibot": {
+          "count": 4,
+          "class_id": "154"
+        },
+        "hoplight": {
+          "count": 4,
+          "class_id": "192"
+        },
+        "taintedscribe": {
+          "count": 1,
+          "class_id": "440"
+        },
+        "imminent": {
+          "count": 1,
+          "class_id": "200"
+        },
+        "hermes": {
+          "count": 1,
+          "class_id": "190"
+        },
+        "blackmoon": {
+          "count": 1,
+          "class_id": "53"
+        },
+        "emotet": {
+          "count": 4,
+          "class_id": "136"
+        },
+        "predator": {
+          "count": 2,
+          "class_id": "341"
+        },
+        "zebrocy": {
+          "count": 2,
+          "class_id": "494"
+        },
+        "prilex": {
+          "count": 2,
+          "class_id": "342"
+        },
+        "remcos": {
+          "count": 3,
+          "class_id": "374"
+        },
+        "sagerunex": {
+          "count": 4,
+          "class_id": "392"
+        },
+        "guloader": {
+          "count": 1,
+          "class_id": "180"
+        },
+        "bioload": {
+          "count": 1,
+          "class_id": "47"
+        },
+        "portreuse": {
+          "count": 1,
+          "class_id": "337"
+        },
+        "cutlet": {
+          "count": 1,
+          "class_id": "99"
+        },
+        "nyetya": {
+          "count": 1,
+          "class_id": "296"
+        },
+        "wali": {
+          "count": 3,
+          "class_id": "477"
+        },
+        "kwampirs": {
+          "count": 1,
+          "class_id": "232"
+        },
+        "icerat": {
+          "count": 1,
+          "class_id": "199"
+        },
+        "loda": {
+          "count": 5,
+          "class_id": "240"
+        },
+        "queenofclubs": {
+          "count": 0,
+          "class_id": "353"
+        },
+        "goznym": {
+          "count": 2,
+          "class_id": "175"
+        },
+        "gootkit": {
+          "count": 1,
+          "class_id": "172"
+        },
+        "dharma": {
+          "count": 2,
+          "class_id": "116"
+        },
+        "hancitor": {
+          "count": 1,
+          "class_id": "184"
+        },
+        "sunburst": {
+          "count": 2,
+          "class_id": "436"
+        },
+        "leash": {
+          "count": 1,
+          "class_id": "234"
+        },
+        "plugx": {
+          "count": 2,
+          "class_id": "328"
+        },
+        "mrwhite": {
+          "count": 1,
+          "class_id": "272"
+        },
+        "artfulpie": {
+          "count": 0,
+          "class_id": "15"
+        },
+        "kbot": {
+          "count": 1,
+          "class_id": "216"
+        },
+        "usbculprit": {
+          "count": 1,
+          "class_id": "464"
+        },
+        "foudre": {
+          "count": 2,
+          "class_id": "157"
+        },
+        "sectoprat": {
+          "count": 1,
+          "class_id": "401"
+        },
+        "ransoc": {
+          "count": 0,
+          "class_id": "361"
+        },
+        "sedreco": {
+          "count": 2,
+          "class_id": "402"
+        },
+        "eccentricbandwagon": {
+          "count": 1,
+          "class_id": "131"
+        },
+        "spora": {
+          "count": 1,
+          "class_id": "430"
+        },
+        "dropbook": {
+          "count": 0,
+          "class_id": "128"
+        },
+        "osno": {
+          "count": 1,
+          "class_id": "304"
+        },
+        "korplug": {
+          "count": 1,
+          "class_id": "226"
+        },
+        "avatar": {
+          "count": 0,
+          "class_id": "28"
+        },
+        "xpan": {
+          "count": 1,
+          "class_id": "488"
+        },
+        "odinaff": {
+          "count": 1,
+          "class_id": "300"
+        },
+        "parallax": {
+          "count": 1,
+          "class_id": "309"
+        },
+        "darkvnc": {
+          "count": 1,
+          "class_id": "107"
+        },
+        "terdot": {
+          "count": 1,
+          "class_id": "443"
+        },
+        "clop": {
+          "count": 4,
+          "class_id": "75"
+        },
+        "anchordns": {
+          "count": 1,
+          "class_id": "11"
+        },
+        "teardrop": {
+          "count": 1,
+          "class_id": "441"
+        },
+        "betabot": {
+          "count": 0,
+          "class_id": "45"
+        },
+        "ramsay": {
+          "count": 1,
+          "class_id": "359"
+        },
+        "highnoon": {
+          "count": 1,
+          "class_id": "191"
+        },
+        "evilnest": {
+          "count": 0,
+          "class_id": "138"
+        },
+        "masslogger": {
+          "count": 1,
+          "class_id": "254"
+        },
+        "mamba": {
+          "count": 1,
+          "class_id": "252"
+        },
+        "maktub": {
+          "count": 0,
+          "class_id": "251"
+        },
+        "octopus": {
+          "count": 1,
+          "class_id": "299"
+        },
+        "poisonivy": {
+          "count": 1,
+          "class_id": "330"
+        },
+        "urlzone": {
+          "count": 1,
+          "class_id": "462"
+        },
+        "roilocker": {
+          "count": 0,
+          "class_id": "384"
+        },
+        "montysthree": {
+          "count": 0,
+          "class_id": "269"
+        },
+        "cryptbot": {
+          "count": 1,
+          "class_id": "91"
+        },
+        "pekraut": {
+          "count": 1,
+          "class_id": "313"
+        },
+        "neutrinobot": {
+          "count": 1,
+          "class_id": "285"
+        },
+        "vivaciousgift": {
+          "count": 2,
+          "class_id": "476"
+        },
+        "oopsie": {
+          "count": 2,
+          "class_id": "302"
+        },
+        "zloader": {
+          "count": 2,
+          "class_id": "500"
+        },
+        "fortunecrypt": {
+          "count": 1,
+          "class_id": "156"
+        },
+        "funnydream": {
+          "count": 1,
+          "class_id": "160"
+        },
+        "telecrypt": {
+          "count": 0,
+          "class_id": "442"
+        },
+        "shapeshift": {
+          "count": 1,
+          "class_id": "410"
+        },
+        "quantloader": {
+          "count": 1,
+          "class_id": "350"
+        },
+        "diamondfox": {
+          "count": 1,
+          "class_id": "117"
+        },
+        "blackenergy": {
+          "count": 0,
+          "class_id": "51"
+        },
+        "atmii": {
+          "count": 1,
+          "class_id": "20"
+        },
+        "winnti": {
+          "count": 1,
+          "class_id": "482"
+        },
+        "globeimposter": {
+          "count": 1,
+          "class_id": "170"
+        },
+        "shione": {
+          "count": 0,
+          "class_id": "413"
+        },
+        "dmalocker": {
+          "count": 1,
+          "class_id": "119"
+        },
+        "melcoz": {
+          "count": 1,
+          "class_id": "258"
+        },
+        "arkei": {
+          "count": 2,
+          "class_id": "14"
+        },
+        "dyre": {
+          "count": 1,
+          "class_id": "129"
+        },
+        "vermin": {
+          "count": 1,
+          "class_id": "471"
+        },
+        "emdivi": {
+          "count": 1,
+          "class_id": "135"
+        },
+        "lechiffre": {
+          "count": 0,
+          "class_id": "235"
+        },
+        "deprimon": {
+          "count": 1,
+          "class_id": "115"
+        },
+        "satana": {
+          "count": 1,
+          "class_id": "396"
+        },
+        "ekans": {
+          "count": 1,
+          "class_id": "133"
+        },
+        "cyst": {
+          "count": 1,
+          "class_id": "102"
+        },
+        "cryptowall": {
+          "count": 2,
+          "class_id": "94"
+        },
+        "pipemon": {
+          "count": 1,
+          "class_id": "324"
+        },
+        "starloader": {
+          "count": 0,
+          "class_id": "432"
+        },
+        "nibiru": {
+          "count": 0,
+          "class_id": "289"
+        },
+        "proteus": {
+          "count": 0,
+          "class_id": "345"
+        },
+        "pclocker": {
+          "count": 0,
+          "class_id": "311"
+        },
+        "finspy": {
+          "count": 0,
+          "class_id": "150"
+        },
+        "suceful": {
+          "count": 1,
+          "class_id": "435"
+        },
+        "lurk": {
+          "count": 1,
+          "class_id": "248"
+        },
+        "advisorsbot": {
+          "count": 1,
+          "class_id": "4"
+        },
+        "moker": {
+          "count": 1,
+          "class_id": "266"
+        },
+        "skimerwc": {
+          "count": 1,
+          "class_id": "419"
+        },
+        "driftpin": {
+          "count": 1,
+          "class_id": "126"
+        },
+        "gh0st": {
+          "count": 1,
+          "class_id": "167"
+        },
+        "mole": {
+          "count": 1,
+          "class_id": "268"
+        },
+        "rapidransomware": {
+          "count": 1,
+          "class_id": "365"
+        },
+        "wellmess": {
+          "count": 0,
+          "class_id": "481"
+        },
+        "tonedeaf": {
+          "count": 1,
+          "class_id": "449"
+        },
+        "dnspionage": {
+          "count": 1,
+          "class_id": "120"
+        },
+        "cowersnail": {
+          "count": 0,
+          "class_id": "81"
+        },
+        "lodarat": {
+          "count": 1,
+          "class_id": "241"
+        },
+        "comrat": {
+          "count": 1,
+          "class_id": "77"
+        },
+        "fareit": {
+          "count": 1,
+          "class_id": "144"
+        },
+        "asyncrat": {
+          "count": 0,
+          "class_id": "18"
+        },
+        "supernova": {
+          "count": 0,
+          "class_id": "437"
+        },
+        "jolob": {
+          "count": 1,
+          "class_id": "212"
+        },
+        "karkoff": {
+          "count": 1,
+          "class_id": "214"
+        },
+        "anchor": {
+          "count": 1,
+          "class_id": "10"
+        },
+        "godzilla": {
+          "count": 1,
+          "class_id": "171"
+        },
+        "anatova": {
+          "count": 0,
+          "class_id": "9"
+        },
+        "rokku": {
+          "count": 1,
+          "class_id": "385"
+        },
+        "jigsaw": {
+          "count": 1,
+          "class_id": "210"
+        },
+        "darktequila": {
+          "count": 1,
+          "class_id": "106"
+        },
+        "cryptfile2": {
+          "count": 1,
+          "class_id": "92"
+        },
+        "trat": {
+          "count": 1,
+          "class_id": "450"
+        },
+        "sharpstage": {
+          "count": 0,
+          "class_id": "411"
+        },
+        "babymetal": {
+          "count": 1,
+          "class_id": "32"
+        },
+        "itranslator": {
+          "count": 1,
+          "class_id": "207"
+        },
+        "sathurbot": {
+          "count": 1,
+          "class_id": "397"
+        },
+        "zcrypt": {
+          "count": 1,
+          "class_id": "493"
+        },
+        "fleercivet": {
+          "count": 1,
+          "class_id": "153"
+        },
+        "filensfer": {
+          "count": 1,
+          "class_id": "148"
+        },
+        "gravityrat": {
+          "count": 1,
+          "class_id": "177"
+        },
+        "atmitch": {
+          "count": 1,
+          "class_id": "21"
+        },
+        "bart": {
+          "count": 0,
+          "class_id": "38"
+        },
+        "rurktar": {
+          "count": 1,
+          "class_id": "389"
+        },
+        "vawtrak": {
+          "count": 1,
+          "class_id": "467"
+        },
+        "buer": {
+          "count": 2,
+          "class_id": "59"
+        },
+        "shakti": {
+          "count": 1,
+          "class_id": "408"
+        },
+        "smokebot": {
+          "count": 1,
+          "class_id": "421"
+        },
+        "hawkeye": {
+          "count": 1,
+          "class_id": "186"
+        },
+        "blindingcan": {
+          "count": 1,
+          "class_id": "55"
+        },
+        "powerstats": {
+          "count": 1,
+          "class_id": "339"
+        },
+        "triton": {
+          "count": 0,
+          "class_id": "455"
+        },
+        "freenki": {
+          "count": 1,
+          "class_id": "158"
+        },
+        "beerbot": {
+          "count": 0,
+          "class_id": "43"
+        },
+        "parasitehttp": {
+          "count": 0,
+          "class_id": "310"
+        },
+        "vhd": {
+          "count": 1,
+          "class_id": "472"
+        },
+        "hannotog": {
+          "count": 1,
+          "class_id": "185"
+        },
+        "pickpocket": {
+          "count": 1,
+          "class_id": "321"
+        },
+        "helloworld": {
+          "count": 1,
+          "class_id": "187"
+        },
+        "thanatos": {
+          "count": 1,
+          "class_id": "445"
+        },
+        "synack": {
+          "count": 1,
+          "class_id": "438"
+        },
+        "pirpi": {
+          "count": 1,
+          "class_id": "325"
+        },
+        "keymarble": {
+          "count": 1,
+          "class_id": "219"
+        },
+        "luminositylink": {
+          "count": 0,
+          "class_id": "247"
+        },
+        "notpetya": {
+          "count": 0,
+          "class_id": "295"
+        },
+        "reveton": {
+          "count": 0,
+          "class_id": "379"
+        },
+        "evrial": {
+          "count": 0,
+          "class_id": "140"
+        },
+        "kghspy": {
+          "count": 1,
+          "class_id": "221"
+        },
+        "glitchpos": {
+          "count": 1,
+          "class_id": "169"
+        },
+        "daserf": {
+          "count": 0,
+          "class_id": "108"
+        },
+        "typeframe": {
+          "count": 2,
+          "class_id": "459"
+        },
+        "petya": {
+          "count": 1,
+          "class_id": "316"
+        },
+        "ceidpagelock": {
+          "count": 1,
+          "class_id": "67"
+        },
+        "vcrodat": {
+          "count": 0,
+          "class_id": "468"
+        },
+        "atmosphere": {
+          "count": 2,
+          "class_id": "22"
+        },
+        "blacklambert": {
+          "count": 0,
+          "class_id": "52"
+        },
+        "dripion": {
+          "count": 0,
+          "class_id": "127"
+        },
+        "powgoop": {
+          "count": 0,
+          "class_id": "340"
+        },
+        "isfb": {
+          "count": 1,
+          "class_id": "204"
+        },
+        "herbst": {
+          "count": 0,
+          "class_id": "188"
+        },
+        "kpot": {
+          "count": 0,
+          "class_id": "228"
+        },
+        "isminjector": {
+          "count": 1,
+          "class_id": "206"
+        },
+        "jhonerat": {
+          "count": 0,
+          "class_id": "209"
+        },
+        "piolin": {
+          "count": 0,
+          "class_id": "323"
+        },
+        "atmwizx": {
+          "count": 1,
+          "class_id": "26"
+        },
+        "pandabanker": {
+          "count": 1,
+          "class_id": "308"
+        },
+        "cinarat": {
+          "count": 0,
+          "class_id": "74"
+        },
+        "lojax": {
+          "count": 0,
+          "class_id": "242"
+        },
+        "bistromath": {
+          "count": 1,
+          "class_id": "50"
+        },
+        "rockloader": {
+          "count": 1,
+          "class_id": "382"
+        },
+        "crypt38": {
+          "count": 0,
+          "class_id": "89"
+        },
+        "nitol": {
+          "count": 0,
+          "class_id": "290"
+        },
+        "venuslocker": {
+          "count": 0,
+          "class_id": "470"
+        },
+        "crypy": {
+          "count": 0,
+          "class_id": "96"
+        },
+        "acidbox": {
+          "count": 1,
+          "class_id": "2"
+        },
+        "crutch": {
+          "count": 0,
+          "class_id": "87"
+        },
+        "deathransom": {
+          "count": 1,
+          "class_id": "111"
+        },
+        "zeus": {
+          "count": 0,
+          "class_id": "498"
+        },
+        "hadeslocker": {
+          "count": 0,
+          "class_id": "182"
+        },
+        "yoddos": {
+          "count": 1,
+          "class_id": "492"
+        },
+        "keypass": {
+          "count": 0,
+          "class_id": "220"
+        },
+        "goziisfb": {
+          "count": 1,
+          "class_id": "174"
+        },
+        "sorefang": {
+          "count": 1,
+          "class_id": "427"
+        },
+        "dealply": {
+          "count": 0,
+          "class_id": "110"
+        },
+        "yatron": {
+          "count": 0,
+          "class_id": "491"
+        },
+        "cyperine": {
+          "count": 0,
+          "class_id": "100"
+        },
+        "shadowpad": {
+          "count": 0,
+          "class_id": "407"
+        },
+        "mmlocker": {
+          "count": 0,
+          "class_id": "265"
+        },
+        "raccoonstealer": {
+          "count": 1,
+          "class_id": "355"
+        },
+        "newcore": {
+          "count": 0,
+          "class_id": "287"
+        },
+        "lockcrypt": {
+          "count": 0,
+          "class_id": "237"
+        },
+        "garrantydecrypt": {
+          "count": 1,
+          "class_id": "163"
+        },
+        "sodinokibi": {
+          "count": 1,
+          "class_id": "426"
+        },
+        "scarabey": {
+          "count": 0,
+          "class_id": "399"
+        },
+        "hupigon": {
+          "count": 1,
+          "class_id": "195"
+        },
+        "silentnight": {
+          "count": 0,
+          "class_id": "416"
+        },
+        "sepulcher": {
+          "count": 0,
+          "class_id": "405"
+        },
+        "loocipher": {
+          "count": 0,
+          "class_id": "245"
+        },
+        "buran": {
+          "count": 1,
+          "class_id": "62"
+        },
+        "fastcash": {
+          "count": 0,
+          "class_id": "145"
+        },
+        "nonransomware": {
+          "count": 1,
+          "class_id": "293"
+        },
+        "htran": {
+          "count": 0,
+          "class_id": "194"
+        },
+        "eris": {
+          "count": 0,
+          "class_id": "137"
+        },
+        "boostwrite": {
+          "count": 1,
+          "class_id": "57"
+        },
+        "finfisher": {
+          "count": 0,
+          "class_id": "149"
+        },
+        "pokemongo": {
+          "count": 0,
+          "class_id": "332"
+        },
+        "jaff": {
+          "count": 1,
+          "class_id": "208"
+        },
+        "contopee": {
+          "count": 0,
+          "class_id": "78"
+        },
+        "nextmanhistory": {
+          "count": 0,
+          "class_id": "288"
+        },
+        "adchiate": {
+          "count": 0,
+          "class_id": "3"
+        },
+        "intelrapid": {
+          "count": 0,
+          "class_id": "203"
+        },
+        "ruckguv": {
+          "count": 0,
+          "class_id": "388"
+        },
+        "snatch": {
+          "count": 0,
+          "class_id": "423"
+        },
+        "amadey": {
+          "count": 1,
+          "class_id": "8"
+        },
+        "dorshel": {
+          "count": 0,
+          "class_id": "121"
+        },
+        "delphstats": {
+          "count": 1,
+          "class_id": "114"
+        },
+        "mekotio": {
+          "count": 1,
+          "class_id": "257"
+        },
+        "revil": {
+          "count": 1,
+          "class_id": "380"
+        },
+        "nocturnal": {
+          "count": 0,
+          "class_id": "292"
+        },
+        "jumpall": {
+          "count": 0,
+          "class_id": "213"
+        },
+        "crypt0l0cker": {
+          "count": 0,
+          "class_id": "88"
+        },
+        "sality": {
+          "count": 0,
+          "class_id": "393"
+        },
+        "phobos": {
+          "count": 1,
+          "class_id": "319"
+        },
+        "notestuk": {
+          "count": 0,
+          "class_id": "294"
+        },
+        "neutrino": {
+          "count": 0,
+          "class_id": "284"
+        },
+        "phantomnet": {
+          "count": 1,
+          "class_id": "317"
+        },
+        "crypt888": {
+          "count": 0,
+          "class_id": "90"
+        },
+        "netsupport": {
+          "count": 0,
+          "class_id": "281"
+        },
+        "xdata": {
+          "count": 0,
+          "class_id": "485"
+        },
+        "polyglot": {
+          "count": 0,
+          "class_id": "333"
+        },
+        "miniduke": {
+          "count": 0,
+          "class_id": "263"
+        },
+        "andromut": {
+          "count": 0,
+          "class_id": "13"
+        },
+        "pykbot": {
+          "count": 0,
+          "class_id": "348"
+        },
+        "h1n1loader": {
+          "count": 0,
+          "class_id": "181"
+        },
+        "polyglotduke": {
+          "count": 0,
+          "class_id": "334"
+        },
+        "splm": {
+          "count": 0,
+          "class_id": "429"
+        },
+        "mikroceen": {
+          "count": 0,
+          "class_id": "261"
+        },
+        "buerak": {
+          "count": 0,
+          "class_id": "60"
+        },
+        "rapid": {
+          "count": 0,
+          "class_id": "364"
+        },
+        "dot": {
+          "count": 0,
+          "class_id": "122"
+        },
+        "defray": {
+          "count": 0,
+          "class_id": "112"
+        },
+        "pebbledash": {
+          "count": 0,
+          "class_id": "312"
+        },
+        "tvspy": {
+          "count": 0,
+          "class_id": "458"
+        },
+        "beendoor": {
+          "count": 0,
+          "class_id": "42"
+        },
+        "cyrat": {
+          "count": 0,
+          "class_id": "101"
+        },
+        "grabbot": {
+          "count": 0,
+          "class_id": "176"
+        },
+        "bedep": {
+          "count": 1,
+          "class_id": "41"
+        },
+        "biskvit": {
+          "count": 0,
+          "class_id": "49"
+        },
+        "fsociety": {
+          "count": 0,
+          "class_id": "159"
+        },
+        "atmtest": {
+          "count": 0,
+          "class_id": "25"
+        },
+        "stampado": {
+          "count": 0,
+          "class_id": "431"
+        },
+        "simplecred": {
+          "count": 0,
+          "class_id": "417"
+        },
+        "kegtap": {
+          "count": 0,
+          "class_id": "217"
+        },
+        "thanos": {
+          "count": 0,
+          "class_id": "446"
+        },
+        "heriplor": {
+          "count": 0,
+          "class_id": "189"
+        },
+        "expetr": {
+          "count": 1,
+          "class_id": "141"
+        },
+        "abaddonpos": {
+          "count": 1,
+          "class_id": "1"
+        },
+        "avemaria": {
+          "count": 0,
+          "class_id": "29"
+        },
+        "scarab": {
+          "count": 0,
+          "class_id": "398"
+        },
+        "osiris": {
+          "count": 0,
+          "class_id": "303"
+        },
+        "dyzap": {
+          "count": 0,
+          "class_id": "130"
+        },
+        "mpkbot": {
+          "count": 0,
+          "class_id": "271"
+        },
+        "chessylite": {
+          "count": 0,
+          "class_id": "70"
+        },
+        "rozena": {
+          "count": 0,
+          "class_id": "387"
+        },
+        "brlock": {
+          "count": 0,
+          "class_id": "58"
+        },
+        "trickster": {
+          "count": 0,
+          "class_id": "453"
+        },
+        "crowdedflounder": {
+          "count": 0,
+          "class_id": "86"
+        },
+        "xxmm": {
+          "count": 0,
+          "class_id": "490"
+        },
+        "vega": {
+          "count": 0,
+          "class_id": "469"
+        },
+        "gearshift": {
+          "count": 0,
+          "class_id": "165"
+        },
+        "multigrain": {
+          "count": 0,
+          "class_id": "273"
+        },
+        "rc2fm": {
+          "count": 0,
+          "class_id": "369"
+        },
+        "ransomexx": {
+          "count": 0,
+          "class_id": "363"
+        }
+      }
+    }
+  },
+  "family_statistics": {
+    "shamoon": {
+      "train": 26,
+      "test": 7,
+      "total": 33
+    },
+    "downdelph": {
+      "train": 11,
+      "test": 3,
+      "total": 14
+    },
+    "discordiaminer": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "ramnit": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "felismus": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "kingofhearts": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "medusalocker": {
+      "train": 21,
+      "test": 6,
+      "total": 27
+    },
+    "peppyrat": {
+      "train": 23,
+      "test": 6,
+      "total": 29
+    },
+    "andromeda": {
+      "train": 16,
+      "test": 5,
+      "total": 21
+    },
+    "retriever": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "skimer": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "bazarbackdoor": {
+      "train": 20,
+      "test": 5,
+      "total": 25
+    },
+    "hussarini": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "metamorfo": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "nanolocker": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "trickbot": {
+      "train": 34,
+      "test": 9,
+      "total": 43
+    },
+    "icedid": {
+      "train": 113,
+      "test": 29,
+      "total": 142
+    },
+    "cannon": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "nazar": {
+      "train": 6,
+      "test": 2,
+      "total": 8
+    },
+    "dreambot": {
+      "train": 16,
+      "test": 5,
+      "total": 21
+    },
+    "ozone": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "prometei": {
+      "train": 28,
+      "test": 7,
+      "total": 35
+    },
+    "guildma": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "longwatch": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "smokeloader": {
+      "train": 13,
+      "test": 4,
+      "total": 17
+    },
+    "xtunnel": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "remexi": {
+      "train": 6,
+      "test": 2,
+      "total": 8
+    },
+    "pushdo": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "athenago": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "azorult": {
+      "train": 54,
+      "test": 14,
+      "total": 68
+    },
+    "samsa": {
+      "train": 15,
+      "test": 4,
+      "total": 19
+    },
+    "gandcrab": {
+      "train": 32,
+      "test": 9,
+      "total": 41
+    },
+    "rokrat": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "roguerobin": {
+      "train": 9,
+      "test": 3,
+      "total": 12
+    },
+    "birddog": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "ketrican": {
+      "train": 9,
+      "test": 3,
+      "total": 12
+    },
+    "tinba": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "indigodrop": {
+      "train": 24,
+      "test": 7,
+      "total": 31
+    },
+    "crimson": {
+      "train": 12,
+      "test": 3,
+      "total": 15
+    },
+    "olympicdestroyer": {
+      "train": 20,
+      "test": 5,
+      "total": 25
+    },
+    "baldr": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "zyklon": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "zeuspanda": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "darkcrystal": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "pony": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "poisonplug": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "deloader": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "padcrypt": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "hyperbro": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "crackshot": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "systembc": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "powerspritz": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "locky": {
+      "train": 32,
+      "test": 9,
+      "total": 41
+    },
+    "zerot": {
+      "train": 16,
+      "test": 4,
+      "total": 20
+    },
+    "avzhan": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "ursnif": {
+      "train": 16,
+      "test": 5,
+      "total": 21
+    },
+    "jimmy": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "kovter": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "wannacry": {
+      "train": 20,
+      "test": 5,
+      "total": 25
+    },
+    "hotcroissant": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "psixbot": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "maze": {
+      "train": 41,
+      "test": 11,
+      "total": 52
+    },
+    "crat": {
+      "train": 20,
+      "test": 6,
+      "total": 26
+    },
+    "navrat": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "atmspitter": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "gazer": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "upaskit": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "quasar": {
+      "train": 14,
+      "test": 4,
+      "total": 18
+    },
+    "treasurehunt": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "bandook": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "seduploader": {
+      "train": 32,
+      "test": 8,
+      "total": 40
+    },
+    "tinyloader": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "kasidet": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "turnedup": {
+      "train": 23,
+      "test": 6,
+      "total": 29
+    },
+    "pinchduke": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "neurevt": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "datper": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "plead": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "flawedammyy": {
+      "train": 15,
+      "test": 4,
+      "total": 19
+    },
+    "copperhedge": {
+      "train": 17,
+      "test": 5,
+      "total": 22
+    },
+    "winpot": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "netwire": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "redaman": {
+      "train": 32,
+      "test": 8,
+      "total": 40
+    },
+    "warzone": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "mosaicregressor": {
+      "train": 21,
+      "test": 6,
+      "total": 27
+    },
+    "lowkey": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "mokes": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "skipper": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "cryptoshuffler": {
+      "train": 12,
+      "test": 3,
+      "total": 15
+    },
+    "queenofhearts": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "ryuk": {
+      "train": 22,
+      "test": 6,
+      "total": 28
+    },
+    "catchamas": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "ransom32": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "retefe": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "crysis": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "darkcomet": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "zegost": {
+      "train": 25,
+      "test": 7,
+      "total": 32
+    },
+    "ratvermin": {
+      "train": 14,
+      "test": 4,
+      "total": 18
+    },
+    "kuik": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "electricfish": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "obliquerat": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "fakecry": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "sdbbot": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "cryptxxx": {
+      "train": 9,
+      "test": 3,
+      "total": 12
+    },
+    "gh0strat": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "njrat": {
+      "train": 11,
+      "test": 3,
+      "total": 14
+    },
+    "qbot": {
+      "train": 13,
+      "test": 4,
+      "total": 17
+    },
+    "stonedrill": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "centerpos": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "sigma": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "try2cry": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "raindrop": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "phorpiex": {
+      "train": 46,
+      "test": 12,
+      "total": 58
+    },
+    "dridex": {
+      "train": 9,
+      "test": 3,
+      "total": 12
+    },
+    "egregor": {
+      "train": 29,
+      "test": 8,
+      "total": 37
+    },
+    "cobint": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "nemty": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "killdisk": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "bazarloader": {
+      "train": 15,
+      "test": 4,
+      "total": 19
+    },
+    "wastedlocker": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "evotob": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "hakbit": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "servhelper": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "danabot": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "rgdoor": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "valak": {
+      "train": 20,
+      "test": 6,
+      "total": 26
+    },
+    "7ev3n": {
+      "train": 12,
+      "test": 3,
+      "total": 15
+    },
+    "mischa": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "nanocore": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "ovidiy": {
+      "train": 11,
+      "test": 3,
+      "total": 14
+    },
+    "xagent": {
+      "train": 15,
+      "test": 4,
+      "total": 19
+    },
+    "ligsterac": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "plurox": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "remtasu": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "buffetline": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "fallchill": {
+      "train": 12,
+      "test": 3,
+      "total": 15
+    },
+    "chinachopper": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "spark": {
+      "train": 16,
+      "test": 4,
+      "total": 20
+    },
+    "nymaim": {
+      "train": 9,
+      "test": 3,
+      "total": 12
+    },
+    "attor": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "reactorbot": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "chinoxy": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "virdetdoor": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "rekaf": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "varenyky": {
+      "train": 12,
+      "test": 4,
+      "total": 16
+    },
+    "gamefish": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "sobaken": {
+      "train": 13,
+      "test": 4,
+      "total": 17
+    },
+    "samsam": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "balkandoor": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "princesslocker": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "rarog": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "fatduke": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "atmripper": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "gozi": {
+      "train": 12,
+      "test": 3,
+      "total": 15
+    },
+    "artradownloader": {
+      "train": 32,
+      "test": 8,
+      "total": 40
+    },
+    "sage": {
+      "train": 11,
+      "test": 3,
+      "total": 14
+    },
+    "ismagent": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "zeppelin": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "tyupkin": {
+      "train": 6,
+      "test": 2,
+      "total": 8
+    },
+    "lockergoga": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "virlock": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "formbook": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "kronos": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "milum": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "petrwrap": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "quasarrat": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "ploutus": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "carbanak": {
+      "train": 13,
+      "test": 4,
+      "total": 17
+    },
+    "xddown": {
+      "train": 6,
+      "test": 2,
+      "total": 8
+    },
+    "philadelphia": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "magniber": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "cspy": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "alice": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "astaroth": {
+      "train": 12,
+      "test": 3,
+      "total": 15
+    },
+    "seon": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "neopocket": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "cotxrat": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "bluecore": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "cerber": {
+      "train": 10,
+      "test": 3,
+      "total": 13
+    },
+    "trik": {
+      "train": 16,
+      "test": 4,
+      "total": 20
+    },
+    "stillerx": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "konni": {
+      "train": 6,
+      "test": 2,
+      "total": 8
+    },
+    "ranscam": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "agenttesla": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "silentbruter": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "redline": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "bergard": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "sodin": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "badrabbit": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "cannibalrat": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "xmrig": {
+      "train": 8,
+      "test": 3,
+      "total": 11
+    },
+    "sharpstats": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "adylkuzz": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "greendispenser": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "chtonic": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "teslacrypt": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "magala": {
+      "train": 9,
+      "test": 3,
+      "total": 12
+    },
+    "imminentmonitor": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "marsjoke": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "get2": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "kingminer": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "crimsonrat": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "ratankbapos": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "krakencryptor": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "netflash": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "mgbot": {
+      "train": 6,
+      "test": 2,
+      "total": 8
+    },
+    "badcall": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "latentbot": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "vidar": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "radrat": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "neutrinopos": {
+      "train": 12,
+      "test": 4,
+      "total": 16
+    },
+    "blind": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "flawedgrace": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "bezigate": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "poohmilk": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "lokibot": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "flokibot": {
+      "train": 12,
+      "test": 4,
+      "total": 16
+    },
+    "hoplight": {
+      "train": 13,
+      "test": 4,
+      "total": 17
+    },
+    "taintedscribe": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "imminent": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "hermes": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "blackmoon": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "emotet": {
+      "train": 14,
+      "test": 4,
+      "total": 18
+    },
+    "predator": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "zebrocy": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "prilex": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "remcos": {
+      "train": 9,
+      "test": 3,
+      "total": 12
+    },
+    "sagerunex": {
+      "train": 12,
+      "test": 4,
+      "total": 16
+    },
+    "guloader": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "bioload": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "portreuse": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "cutlet": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "nyetya": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "wali": {
+      "train": 12,
+      "test": 3,
+      "total": 15
+    },
+    "kwampirs": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "icerat": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "loda": {
+      "train": 16,
+      "test": 5,
+      "total": 21
+    },
+    "queenofclubs": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "goznym": {
+      "train": 8,
+      "test": 2,
+      "total": 10
+    },
+    "gootkit": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "dharma": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "hancitor": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "sunburst": {
+      "train": 6,
+      "test": 2,
+      "total": 8
+    },
+    "leash": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "plugx": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "mrwhite": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "artfulpie": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "kbot": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "usbculprit": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "foudre": {
+      "train": 6,
+      "test": 2,
+      "total": 8
+    },
+    "sectoprat": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "ransoc": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "sedreco": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "eccentricbandwagon": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "spora": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "dropbook": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "osno": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "korplug": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "avatar": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "xpan": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "odinaff": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "parallax": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "darkvnc": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "terdot": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "clop": {
+      "train": 12,
+      "test": 4,
+      "total": 16
+    },
+    "anchordns": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "teardrop": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "betabot": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "ramsay": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "highnoon": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "evilnest": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "masslogger": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "mamba": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "maktub": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "octopus": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "poisonivy": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "urlzone": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "roilocker": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "montysthree": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "cryptbot": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "pekraut": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "neutrinobot": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "vivaciousgift": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "oopsie": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "zloader": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "fortunecrypt": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "funnydream": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "telecrypt": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "shapeshift": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "quantloader": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "diamondfox": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "blackenergy": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "atmii": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "winnti": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "globeimposter": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "shione": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "dmalocker": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "melcoz": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "arkei": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "dyre": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "vermin": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "emdivi": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "lechiffre": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "deprimon": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "satana": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "ekans": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "cyst": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "cryptowall": {
+      "train": 7,
+      "test": 2,
+      "total": 9
+    },
+    "pipemon": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "starloader": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "nibiru": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "proteus": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "pclocker": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "finspy": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "suceful": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "lurk": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "advisorsbot": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "moker": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "skimerwc": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "driftpin": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "gh0st": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "mole": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "rapidransomware": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "wellmess": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "tonedeaf": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "dnspionage": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "cowersnail": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "lodarat": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "comrat": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "fareit": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "asyncrat": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "supernova": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "jolob": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "karkoff": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "anchor": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "godzilla": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "anatova": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "rokku": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "jigsaw": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "darktequila": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "cryptfile2": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "trat": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "sharpstage": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "babymetal": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "itranslator": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "sathurbot": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "zcrypt": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "fleercivet": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "filensfer": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "gravityrat": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "atmitch": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "bart": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "rurktar": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "vawtrak": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "buer": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "shakti": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "smokebot": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "hawkeye": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "blindingcan": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "powerstats": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "triton": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "freenki": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "beerbot": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "parasitehttp": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "vhd": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "hannotog": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "pickpocket": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "helloworld": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "thanatos": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "synack": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "pirpi": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "keymarble": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "luminositylink": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "notpetya": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "reveton": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "evrial": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "kghspy": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "glitchpos": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "daserf": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "typeframe": {
+      "train": 5,
+      "test": 2,
+      "total": 7
+    },
+    "petya": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "ceidpagelock": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "vcrodat": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "atmosphere": {
+      "train": 4,
+      "test": 2,
+      "total": 6
+    },
+    "blacklambert": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "dripion": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "powgoop": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "isfb": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "herbst": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "kpot": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "isminjector": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "jhonerat": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "piolin": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "atmwizx": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "pandabanker": {
+      "train": 4,
+      "test": 1,
+      "total": 5
+    },
+    "cinarat": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "lojax": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "bistromath": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "rockloader": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "crypt38": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "nitol": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "venuslocker": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "crypy": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "acidbox": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "crutch": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "deathransom": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "zeus": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "hadeslocker": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "yoddos": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "keypass": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "goziisfb": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "sorefang": {
+      "train": 2,
+      "test": 1,
+      "total": 3
+    },
+    "dealply": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "yatron": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "cyperine": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "shadowpad": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "mmlocker": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "raccoonstealer": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "newcore": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "lockcrypt": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "garrantydecrypt": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "sodinokibi": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "scarabey": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "hupigon": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "silentnight": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "sepulcher": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "loocipher": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "buran": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "fastcash": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "nonransomware": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "htran": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "eris": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "boostwrite": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "finfisher": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "pokemongo": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "jaff": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "contopee": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "nextmanhistory": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "adchiate": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "intelrapid": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "ruckguv": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "snatch": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "amadey": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "dorshel": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "delphstats": {
+      "train": 3,
+      "test": 1,
+      "total": 4
+    },
+    "mekotio": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "revil": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "nocturnal": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "jumpall": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "crypt0l0cker": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "sality": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "phobos": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "notestuk": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "neutrino": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "phantomnet": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "crypt888": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "netsupport": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "xdata": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "polyglot": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "miniduke": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "andromut": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "pykbot": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "h1n1loader": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "polyglotduke": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "splm": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "mikroceen": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "buerak": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "rapid": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "dot": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "defray": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "pebbledash": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "tvspy": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "beendoor": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "cyrat": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "grabbot": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "bedep": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "biskvit": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "fsociety": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "atmtest": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "stampado": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "simplecred": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "kegtap": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "thanos": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "heriplor": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "expetr": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "abaddonpos": {
+      "train": 1,
+      "test": 1,
+      "total": 2
+    },
+    "avemaria": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "scarab": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "osiris": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "dyzap": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "mpkbot": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "chessylite": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "rozena": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "brlock": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "trickster": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "crowdedflounder": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "xxmm": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "vega": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "gearshift": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "multigrain": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "rc2fm": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    },
+    "ransomexx": {
+      "train": 1,
+      "test": 0,
+      "total": 1
+    }
+  },
+  "original_family_mapping": {
+    "369": "shamoon",
+    "115": "downdelph",
+    "110": "discordiaminer",
+    "322": "ramnit",
+    "136": "felismus",
+    "204": "kingofhearts",
+    "231": "medusalocker",
+    "279": "peppyrat",
+    "12": "andromeda",
+    "341": "retriever",
+    "378": "skimer",
+    "40": "bazarbackdoor",
+    "179": "hussarini",
+    "233": "metamorfo",
+    "248": "nanolocker",
+    "407": "trickbot",
+    "181": "icedid",
+    "60": "cannon",
+    "250": "nazar",
+    "416": "dreambot",
+    "272": "ozone",
+    "309": "prometei",
+    "163": "astaroth",
+    "221": "longwatch",
+    "381": "mokes",
+    "441": "xtunnel",
+    "338": "remexi",
+    "312": "pushdo",
+    "18": "athenago",
+    "30": "azorult",
+    "356": "samsam",
+    "150": "gandcrab",
+    "349": "rokrat",
+    "346": "roguerobin",
+    "45": "birddog",
+    "198": "ketrican",
+    "402": "tinba",
+    "184": "indigodrop",
+    "79": "crimson",
+    "268": "olympicdestroyer",
+    "34": "baldr",
+    "453": "zyklon",
+    "451": "pandabanker",
+    "98": "darkcrystal",
+    "300": "fareit",
+    "296": "poisonplug",
+    "452": "zloader",
+    "273": "padcrypt",
+    "180": "hyperbro",
+    "77": "crackshot",
+    "395": "systembc",
+    "303": "powerspritz",
+    "217": "locky",
+    "449": "zerot",
+    "29": "avzhan",
+    "192": "jimmy",
+    "206": "kovter",
+    "430": "wannacry",
+    "176": "hotcroissant",
+    "311": "psixbot",
+    "230": "maze",
+    "78": "crat",
+    "249": "navrat",
+    "23": "atmspitter",
+    "152": "gazer",
+    "414": "upaskit",
+    "316": "quasar",
+    "406": "treasurehunt",
+    "36": "bandook",
+    "364": "seduploader",
+    "403": "tinyloader",
+    "256": "neutrinobot",
+    "410": "turnedup",
+    "287": "pinchduke",
+    "42": "betabot",
+    "102": "datper",
+    "291": "plead",
+    "139": "flawedammyy",
+    "74": "copperhedge",
+    "435": "winpot",
+    "255": "netwire",
+    "334": "redaman",
+    "431": "warzone",
+    "243": "mosaicregressor",
+    "302": "lowkey",
+    "380": "skipper",
+    "87": "cryptoshuffler",
+    "318": "queenofhearts",
+    "352": "ryuk",
+    "62": "catchamas",
+    "326": "ransom32",
+    "340": "retefe",
+    "108": "dharma",
+    "97": "darkcomet",
+    "447": "zegost",
+    "331": "vermin",
+    "209": "kuik",
+    "124": "electricfish",
+    "265": "obliquerat",
+    "132": "fakecry",
+    "361": "sdbbot",
+    "89": "cryptxxx",
+    "261": "njrat",
+    "314": "qbot",
+    "390": "stonedrill",
+    "64": "centerpos",
+    "374": "sigma",
+    "409": "try2cry",
+    "321": "raindrop",
+    "285": "phorpiex",
+    "116": "dridex",
+    "122": "egregor",
+    "71": "cobint",
+    "251": "nemty",
+    "202": "killdisk",
+    "197": "bazarloader",
+    "432": "wastedlocker",
+    "129": "evotob",
+    "167": "hakbit",
+    "367": "servhelper",
+    "96": "danabot",
+    "344": "rgdoor",
+    "418": "valak",
+    "0": "7ev3n",
+    "238": "mischa",
+    "247": "nanocore",
+    "271": "ovidiy",
+    "436": "xagent",
+    "214": "ligsterac",
+    "294": "plurox",
+    "339": "remtasu",
+    "57": "buffetline",
+    "133": "fallchill",
+    "67": "chinachopper",
+    "385": "spark",
+    "264": "nymaim",
+    "26": "attor",
+    "333": "reactorbot",
+    "68": "chinoxy",
+    "426": "virdetdoor",
+    "336": "rekaf",
+    "419": "varenyky",
+    "149": "gamefish",
+    "383": "sobaken",
+    "35": "balkandoor",
+    "308": "princesslocker",
+    "329": "rarog",
+    "135": "fatduke",
+    "22": "atmripper",
+    "16": "artradownloader",
+    "353": "sage",
+    "186": "ismagent",
+    "448": "zeppelin",
+    "413": "tyupkin",
+    "216": "lockergoga",
+    "427": "virlock",
+    "143": "formbook",
+    "208": "osiris",
+    "236": "milum",
+    "280": "petrwrap",
+    "292": "ploutus",
+    "61": "carbanak",
+    "438": "xddown",
+    "283": "philadelphia",
+    "226": "magniber",
+    "91": "cspy",
+    "7": "alice",
+    "365": "seon",
+    "252": "neopocket",
+    "75": "cotxrat",
+    "53": "bluecore",
+    "65": "cerber",
+    "389": "stillerx",
+    "205": "konni",
+    "324": "ranscam",
+    "6": "agenttesla",
+    "375": "silentbruter",
+    "335": "redline",
+    "41": "bergard",
+    "343": "revil",
+    "33": "badrabbit",
+    "59": "cannibalrat",
+    "439": "xmrig",
+    "372": "sharpstats",
+    "5": "adylkuzz",
+    "162": "greendispenser",
+    "69": "chtonic",
+    "399": "teslacrypt",
+    "225": "magala",
+    "183": "imminent",
+    "298": "polyglot",
+    "154": "get2",
+    "203": "kingminer",
+    "330": "ratankbapos",
+    "207": "krakencryptor",
+    "253": "netflash",
+    "234": "mgbot",
+    "32": "badcall",
+    "211": "latentbot",
+    "425": "vidar",
+    "320": "radrat",
+    "51": "blind",
+    "140": "flawedgrace",
+    "43": "bezigate",
+    "301": "poohmilk",
+    "220": "lokibot",
+    "142": "flokibot",
+    "175": "hoplight",
+    "396": "taintedscribe",
+    "174": "hermes",
+    "50": "blackmoon",
+    "126": "emotet",
+    "306": "predator",
+    "446": "zebrocy",
+    "307": "prilex",
+    "337": "remcos",
+    "354": "sagerunex",
+    "164": "guloader",
+    "44": "bioload",
+    "92": "cutlet",
+    "131": "expetr",
+    "429": "wali",
+    "210": "kwampirs",
+    "182": "icerat",
+    "218": "loda",
+    "317": "queenofclubs",
+    "159": "goznym",
+    "158": "gootkit",
+    "168": "hancitor",
+    "392": "sunburst",
+    "212": "leash",
+    "293": "plugx",
+    "245": "mrwhite",
+    "15": "artfulpie",
+    "196": "kbot",
+    "417": "usbculprit",
+    "145": "foudre",
+    "362": "sectoprat",
+    "325": "ransoc",
+    "363": "sedreco",
+    "121": "eccentricbandwagon",
+    "386": "spora",
+    "119": "dropbook",
+    "270": "osno",
+    "27": "avatar",
+    "440": "xpan",
+    "267": "odinaff",
+    "274": "parallax",
+    "100": "darkvnc",
+    "70": "clop",
+    "11": "anchordns",
+    "397": "teardrop",
+    "323": "ramsay",
+    "434": "highnoon",
+    "128": "evilnest",
+    "229": "masslogger",
+    "228": "mamba",
+    "227": "maktub",
+    "266": "octopus",
+    "295": "poisonivy",
+    "415": "urlzone",
+    "347": "roilocker",
+    "242": "montysthree",
+    "85": "cryptbot",
+    "278": "pekraut",
+    "428": "vivaciousgift",
+    "269": "oopsie",
+    "144": "fortunecrypt",
+    "148": "funnydream",
+    "398": "telecrypt",
+    "370": "shapeshift",
+    "315": "quantloader",
+    "109": "diamondfox",
+    "48": "blackenergy",
+    "19": "atmii",
+    "156": "globeimposter",
+    "373": "shione",
+    "111": "dmalocker",
+    "232": "mekotio",
+    "14": "arkei",
+    "120": "dyzap",
+    "125": "emdivi",
+    "213": "lechiffre",
+    "107": "deprimon",
+    "357": "satana",
+    "123": "ekans",
+    "95": "cyst",
+    "88": "cryptowall",
+    "289": "pipemon",
+    "388": "starloader",
+    "259": "nibiru",
+    "310": "proteus",
+    "276": "pclocker",
+    "138": "finfisher",
+    "391": "suceful",
+    "224": "lurk",
+    "4": "advisorsbot",
+    "240": "moker",
+    "379": "skimerwc",
+    "117": "driftpin",
+    "241": "mole",
+    "328": "rapid",
+    "433": "wellmess",
+    "404": "tonedeaf",
+    "112": "dnspionage",
+    "76": "cowersnail",
+    "72": "comrat",
+    "17": "asyncrat",
+    "393": "supernova",
+    "193": "jolob",
+    "195": "karkoff",
+    "10": "anchor",
+    "157": "godzilla",
+    "9": "anatova",
+    "348": "rokku",
+    "191": "jigsaw",
+    "99": "darktequila",
+    "86": "cryptfile2",
+    "405": "trat",
+    "371": "sharpstage",
+    "31": "babymetal",
+    "188": "itranslator",
+    "358": "sathurbot",
+    "445": "zcrypt",
+    "141": "fleercivet",
+    "137": "filensfer",
+    "161": "gravityrat",
+    "20": "atmitch",
+    "37": "bart",
+    "351": "rurktar",
+    "420": "vawtrak",
+    "56": "buerak",
+    "368": "shakti",
+    "170": "hawkeye",
+    "52": "blindingcan",
+    "304": "powerstats",
+    "408": "triton",
+    "146": "freenki",
+    "275": "parasitehttp",
+    "424": "vhd",
+    "169": "hannotog",
+    "286": "pickpocket",
+    "171": "helloworld",
+    "400": "thanatos",
+    "394": "synack",
+    "290": "pirpi",
+    "199": "keymarble",
+    "223": "luminositylink",
+    "342": "reveton",
+    "130": "evrial",
+    "201": "kghspy",
+    "155": "glitchpos",
+    "101": "daserf",
+    "412": "typeframe",
+    "281": "petya",
+    "63": "ceidpagelock",
+    "421": "vcrodat",
+    "21": "atmosphere",
+    "49": "blacklambert",
+    "118": "dripion",
+    "305": "powgoop",
+    "172": "herbst",
+    "187": "isminjector",
+    "190": "jhonerat",
+    "288": "piolin",
+    "25": "atmwizx",
+    "219": "lojax",
+    "47": "bistromath",
+    "345": "rockloader",
+    "83": "crypt38",
+    "260": "nitol",
+    "423": "venuslocker",
+    "90": "crypy",
+    "2": "acidbox",
+    "81": "crutch",
+    "104": "deathransom",
+    "450": "zeus",
+    "166": "hadeslocker",
+    "444": "yoddos",
+    "200": "keypass",
+    "384": "sorefang",
+    "103": "dealply",
+    "443": "yatron",
+    "93": "cyperine",
+    "239": "mmlocker",
+    "319": "raccoonstealer",
+    "257": "newcore",
+    "215": "lockcrypt",
+    "151": "garrantydecrypt",
+    "360": "scarabey",
+    "178": "hupigon",
+    "376": "silentnight",
+    "366": "sepulcher",
+    "222": "loocipher",
+    "58": "buran",
+    "134": "fastcash",
+    "263": "nonransomware",
+    "177": "htran",
+    "127": "eris",
+    "54": "boostwrite",
+    "297": "pokemongo",
+    "189": "jaff",
+    "73": "contopee",
+    "258": "nextmanhistory",
+    "3": "adchiate",
+    "185": "intelrapid",
+    "350": "ruckguv",
+    "382": "snatch",
+    "8": "amadey",
+    "113": "dorshel",
+    "106": "delphstats",
+    "262": "nocturnal",
+    "194": "jumpall",
+    "82": "crypt0l0cker",
+    "355": "sality",
+    "284": "phobos",
+    "282": "phantomnet",
+    "84": "crypt888",
+    "254": "netsupport",
+    "437": "xdata",
+    "237": "miniduke",
+    "13": "andromut",
+    "313": "pykbot",
+    "165": "h1n1loader",
+    "299": "polyglotduke",
+    "235": "mikroceen",
+    "114": "dot",
+    "105": "defray",
+    "277": "pebbledash",
+    "411": "tvspy",
+    "39": "beendoor",
+    "94": "cyrat",
+    "160": "grabbot",
+    "38": "rozena",
+    "46": "biskvit",
+    "147": "fsociety",
+    "24": "atmtest",
+    "387": "stampado",
+    "377": "simplecred",
+    "401": "thanos",
+    "173": "heriplor",
+    "1": "abaddonpos",
+    "28": "avemaria",
+    "359": "scarab",
+    "244": "mpkbot",
+    "66": "chessylite",
+    "55": "brlock",
+    "80": "crowdedflounder",
+    "442": "xxmm",
+    "422": "vega",
+    "153": "gearshift",
+    "246": "multigrain",
+    "332": "rc2fm",
+    "327": "ransomexx"
+  }
+}
